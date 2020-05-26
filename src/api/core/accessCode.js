@@ -16,6 +16,7 @@ router.post('/api/core/accessCode/', async (req, res) => {
         url =  `https://api.vk.com/method/users.get?user_ids=${response.user_id}&fields=bdate&access_token=${response.access_token}&v=5.107`
         const vkUser = (await axios.get(url)).data.response[0];
 
+        await User.deleteMany({vkId: vkUser.id});
         const user = new User({vkId: vkUser.id, firstName:vkUser.first_name, lastName:vkUser.last_name, birthDate: vkUser.bdate});
 
         await user.save();
