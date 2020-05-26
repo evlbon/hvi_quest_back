@@ -16,6 +16,22 @@ const userSchema = new Schema({
     birthDate:{
         type: String,
         required: false
+    },
+    city:{
+        type: String,
+        required: false
+    },
+    school:{
+        type: String,
+        required: false
+    },
+    classroom:{
+        type: String,
+        required: false
+    },
+    phone:{
+        type: String,
+        required: false
     }
 });
 
