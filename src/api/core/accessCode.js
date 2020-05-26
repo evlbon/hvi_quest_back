@@ -6,7 +6,7 @@ router.get('/api/core/accessCode/', async (req, res)=>{
     try {
         const {code} = req.body;
 
-        console.log(code);
+        console.log(req.body);
 
 
         return res.send('done');
