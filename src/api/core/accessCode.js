@@ -1,7 +1,6 @@
-import {User} from "../../models";
-
 const {Router} = require('express');
 const axios = require('axios');
+const {User} = require('../../models');
 
 const router = Router();
 
