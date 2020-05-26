@@ -1,10 +1,23 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
+const fs = require('fs');
+const http = require('http');
+const https = require('https');
 require('dotenv').config();
 
 const api = require('./api');
 
-const PORT = process.env.PORT || 8080;
+
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/chain.pem', 'utf8');
+
+const credentials = {
+    key: privateKey,
+    cert: certificate,
+    ca: ca
+};
 
 const app = express();
 
@@ -20,6 +33,10 @@ app.use(function(req, res, next) {
 });
 app.use(api);
 
+
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
+
 async function start(){
     try {
         await mongoose.connect('mongodb://localhost/plankton-app',{
@@ -28,7 +45,13 @@ async function start(){
             useUnifiedTopology: true
         });
 
-        app.listen(PORT, () => console.log(`Server has been started on port ${PORT}`));
+        httpServer.listen(80, () => {
+            console.log('HTTP Server running on port 80');
+        });
+
+        httpsServer.listen(443, () => {
+            console.log('HTTPS Server running on port 443');
+        });
     }catch (e) {
         console.log(e)
     }
