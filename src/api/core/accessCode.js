@@ -2,7 +2,7 @@ const {Router} = require('express');
 
 const router = Router();
 
-router.get('/api/core/accessCode/', async (req, res)=>{
+router.post('/api/core/accessCode/', async (req, res)=>{
     try {
         const {code} = req.body;
 
