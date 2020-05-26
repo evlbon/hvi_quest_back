@@ -1,0 +1,17 @@
+{
+  "name": "hvi_quest_back",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  },
+
+  "scripts": {
+    "prod": "PORT=8080 node main.js",
+    "dev": "PORT=8080 nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
