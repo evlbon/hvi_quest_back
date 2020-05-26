@@ -1,13 +1,21 @@
 const {Schema, model} = require('mongoose');
 
 const userSchema = new Schema({
-    appToken: {
+    vkId: {
         type: String,
-        required: true
+        required: false
     },
-    contentTokens: {
-        type: [Object],
-        default: [],
+    firstName: {
+        type: String,
+        required: false
+    },
+    lastName: {
+        type: String,
+        required: false
+    },
+    birthDate:{
+        type: String,
+        required: false
     }
 });
 

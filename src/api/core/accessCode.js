@@ -1,3 +1,5 @@
+import {User} from "../../models";
+
 const {Router} = require('express');
 const axios = require('axios');
 
@@ -13,15 +15,19 @@ router.post('/api/core/accessCode/', async (req, res) => {
         const response = (await axios.get(url)).data;
 
         url =  `https://api.vk.com/method/users.get?user_ids=${response.user_id}&fields=bdate&access_token=${response.access_token}&v=5.107`
-        const vkUser = (await axios.get(url)).data;
+        const vkUser = (await axios.get(url)).data.response[0];
+
+        const user = new User({vkId: vkUser.id, firstName:vkUser.first_name, lastName:vkUser.last_name, birthDate: vkUser.bdate});
+
+        await user.save();
 
 
 
 
-        console.log(vkUser);
+        console.log(user);
 
 
-        return res.send('done');
+        return res.json(user);
     } catch (e) {
         console.log(e);
         res.status(500).send()
