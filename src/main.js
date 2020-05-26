@@ -9,16 +9,6 @@ require('dotenv').config();
 const api = require('./api');
 
 
-// const privateKey = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/privkey.pem', 'utf8');
-// const certificate = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/cert.pem', 'utf8');
-// const ca = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/chain.pem', 'utf8');
-//
-// const credentials = {
-//     key: privateKey,
-//     cert: certificate,
-//     ca: ca
-// };
-
 const app = express();
 
 app.use(express.static(__dirname, { dotfiles: 'allow' } ));
@@ -37,7 +27,6 @@ app.use(api);
 
 
 const httpServer = http.createServer(app);
-// const httpsServer = https.createServer(credentials, app);
 
 async function start(){
     try {
@@ -51,9 +40,25 @@ async function start(){
             console.log('HTTP Server running on port 80');
         });
 
-        // httpsServer.listen(443, () => {
-        //     console.log('HTTPS Server running on port 443');
-        // });
+
+        try {
+            const privateKey = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/privkey.pem', 'utf8');
+            const certificate = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/cert.pem', 'utf8');
+            const ca = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/chain.pem', 'utf8');
+
+            const credentials = {
+                key: privateKey,
+                cert: certificate,
+                ca: ca
+            };
+
+            const httpsServer = https.createServer(credentials, app);
+            httpsServer.listen(443, () => {
+                console.log('HTTPS Server running on port 443');
+            });
+        }catch (e) {
+            console.log(e);
+        }
     }catch (e) {
         console.log(e)
     }
