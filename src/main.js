@@ -21,6 +21,7 @@ const api = require('./api');
 
 const app = express();
 
+app.use(express.static(__dirname, { dotfiles: 'allow' } ));
 app.use(express.json());
 app.use (express.urlencoded({extended: false}));
 app.use(function(req, res, next) {
