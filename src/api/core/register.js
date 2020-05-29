@@ -10,6 +10,9 @@ router.post('/api/core/register/', async (req, res) => {
         if(!firstName || !lastName || !city || !school || !classroom || !phone)
             return res.status(400).send("Some fields were missed");
 
+        if(await User.findOne({phone}))
+            return res.status(403).send('User already exist');
+
 
         if(_id){
             await User.updateOne({_id},{$set:{firstName, lastName, city, school, classroom, phone}});

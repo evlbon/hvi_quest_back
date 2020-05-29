@@ -17,6 +17,10 @@ router.post('/api/core/accessCode/', async (req, res) => {
         const vkUser = (await axios.get(url)).data.response[0];
 
         await User.deleteMany({vkId: vkUser.id});
+
+        if(await User.findOne({vkId: vkUser.id}))
+            return res.status(403).send('User already exist');
+
         const user = new User({vkId: vkUser.id, firstName:vkUser.first_name, lastName:vkUser.last_name, birthDate: vkUser.bdate});
 
         await user.save();
