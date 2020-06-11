@@ -36,29 +36,29 @@ async function start(){
             useUnifiedTopology: true
         });
 
-        httpServer.listen(80, () => {
+        httpServer.listen(8080, () => {
             console.log('HTTP Server running on port 80');
         });
 
 
-        try {
-            const privateKey = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/privkey.pem', 'utf8');
-            const certificate = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/cert.pem', 'utf8');
-            const ca = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/chain.pem', 'utf8');
-
-            const credentials = {
-                key: privateKey,
-                cert: certificate,
-                ca: ca
-            };
-
-            const httpsServer = https.createServer(credentials, app);
-            httpsServer.listen(443, () => {
-                console.log('HTTPS Server running on port 443');
-            });
-        }catch (e) {
-            console.log(e);
-        }
+        // try {
+        //     const privateKey = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/privkey.pem', 'utf8');
+        //     const certificate = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/cert.pem', 'utf8');
+        //     const ca = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/chain.pem', 'utf8');
+        //
+        //     const credentials = {
+        //         key: privateKey,
+        //         cert: certificate,
+        //         ca: ca
+        //     };
+        //
+        //     const httpsServer = https.createServer(credentials, app);
+        //     httpsServer.listen(443, () => {
+        //         console.log('HTTPS Server running on port 443');
+        //     });
+        // }catch (e) {
+        //     console.log(e);
+        // }
     }catch (e) {
         console.log(e)
     }
