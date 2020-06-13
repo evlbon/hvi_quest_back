@@ -1,7 +1,7 @@
 const {Router} = require('express');
 const router = Router();
 
-router.use(require('./core'));
-router.use(require('./game'));
+router.use(require('./login'));
+router.use(require('./status'));
 
 module.exports = router;

@@ -1,12 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
-const fs = require('fs');
-const http = require('http');
-const https = require('https');
 require('dotenv').config();
 
 const api = require('./api');
+const PORT = process.env.PORT || 8080;
 
 
 const app = express();
@@ -18,15 +15,18 @@ app.use (express.urlencoded({extended: false}));
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Credentials', 'true');
-    res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
+    res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS');
     res.header('Access-Control-Expose-Headers', 'Content-Length');
     res.header('Access-Control-Allow-Headers', 'Accept, Authorization, Content-Type, X-Requested-With, Range, Referer, User-Agent, Origin');
+
+    // if(req.method === 'OPTIONS')
+    //     return res.send();
+
     next();
 });
 app.use(api);
 
 
-const httpServer = http.createServer(app);
 
 async function start(){
     try {
@@ -36,29 +36,9 @@ async function start(){
             useUnifiedTopology: true
         });
 
-        httpServer.listen(8080, () => {
-            console.log('HTTP Server running on port 80');
+        app.listen(PORT, () => {
+            console.log(`HTTP Server running on port ${PORT}`);
         });
-
-
-        // try {
-        //     const privateKey = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/privkey.pem', 'utf8');
-        //     const certificate = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/cert.pem', 'utf8');
-        //     const ca = fs.readFileSync('/etc/letsencrypt/live/server.goquest.online/chain.pem', 'utf8');
-        //
-        //     const credentials = {
-        //         key: privateKey,
-        //         cert: certificate,
-        //         ca: ca
-        //     };
-        //
-        //     const httpsServer = https.createServer(credentials, app);
-        //     httpsServer.listen(443, () => {
-        //         console.log('HTTPS Server running on port 443');
-        //     });
-        // }catch (e) {
-        //     console.log(e);
-        // }
     }catch (e) {
         console.log(e)
     }
