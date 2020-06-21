@@ -4,19 +4,27 @@ const utils = require('./utils');
 
 const router = Router();
 
-router.get('/api/game/status/',utils.authenticateToken, async (req, res) => {
+router.post('/api/game/chooseChar/',utils.authenticateToken, async (req, res) => {
     try {
+        const char = req.body.charName;
         const {currentPass} = req.params;
+
+        if(['girl','boy','virus'].indexOf(char) === -1)
+            res.status(400).send();
+
 
         const pass = await Passage.findOne({_id: currentPass});
 
-        return res.json(utils.getStatus(pass));
+        pass.currentChar = char;
+        pass.currentStep = 1;
 
+        await pass.save();
+
+        return res.json(utils.getStatus(pass));
     } catch (e) {
         console.log(e);
         res.status(500).send()
     }
-
 });
 
 

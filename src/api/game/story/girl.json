@@ -1,0 +1,120 @@
+{
+  "steps": [
+    {
+      "id": "1",
+      "char": "boy",
+      "background": "backstage1.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Привет"
+      },
+      "nextStep": "2"
+    },
+
+    {
+      "id": "2",
+      "char": "boy",
+      "background": "backstage1.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Задай мне вопрос"
+      },
+      "nextStep": "3"
+    },
+
+    {
+      "id": "3",
+      "char": "girl",
+      "background": "backstage1.png",
+      "position": "right",
+      "activity": {
+        "type": "radio",
+        "text": "Выбери ответ",
+        "options": [
+          {
+            "label": "ответ 1",
+            "weight": 0,
+            "nextStep": "4.1"
+          },
+          {
+            "label": "ответ 2",
+            "weight": 1,
+            "nextStep": "4.2"
+          },
+          {
+            "label": "ответ 3",
+            "weight": 0,
+            "nextStep": "4.1"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "4.1",
+      "char": "boy",
+      "background": "backstage1.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Не правильно ебаные волки!"
+      },
+      "nextStep": "5"
+    },
+
+    {
+      "id": "4.2",
+      "char": "boy",
+      "background": "backstage1.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Умете! могете!"
+      },
+      "nextStep": "5"
+    },
+
+
+    {
+      "id": "5",
+      "char": "boy",
+      "background": "backstage1.png",
+      "position": "right",
+      "activity": {
+        "type": "checklist",
+        "text": "Вот чеклист",
+        "needSelect": 2,
+        "options": [
+          {
+            "label": "ответ 1",
+            "weight": -2
+          },
+          {
+            "label": "ответ 2",
+            "weight": 1
+          },
+          {
+            "label": "ответ 3",
+            "weight": 1
+          }
+        ]
+      },
+      "nextStep": "6"
+    },
+
+
+    {
+      "id": "6",
+      "char": "boy",
+      "background": "backstage1.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Конец"
+      },
+      "nextStep": "0"
+    }
+  ]
+}

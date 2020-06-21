@@ -10,9 +10,9 @@ const passageSchema = new Schema({
         default: 0
     },
 
-    lastStep: {
-        type: Number,
-        default: 0
+    currentStep: {
+        type: String,
+        default: "0"
     },
 
     currentChar:{
@@ -21,11 +21,11 @@ const passageSchema = new Schema({
     },
 
     activities:{
-        healthy:{
+        girl:{
             type: [Object],
             default: []
         },
-        sick:{
+        boy:{
             type: [Object],
             default: []
         },

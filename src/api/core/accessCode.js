@@ -28,7 +28,7 @@ router.post('/api/core/accessCode/', async (req, res) => {
 
 
 
-        console.log(user);
+        // console.log(user);
 
 
         return res.json(user);
