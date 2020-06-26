@@ -10,7 +10,7 @@ router.get('/api/game/status/',utils.authenticateToken, async (req, res) => {
 
         const pass = await Passage.findOne({_id: currentPass});
 
-        return res.json(utils.getStatus(pass));
+        return res.json(await utils.getStatus(pass));
 
     } catch (e) {
         console.log(e);

@@ -22,7 +22,7 @@ module.exports.generateAccessToken = function generateAccessToken(params) {
 };
 
 
-module.exports.getStatus = (passage) => {
+module.exports.getStatus = async (passage) => {
     const availableChars = {
         girl: passage.activities.girl.length?'finished':'available',
         boy: passage.activities.boy.length?'finished':passage.activities.girl.length?'available':'locked',
@@ -31,6 +31,11 @@ module.exports.getStatus = (passage) => {
 
     let step = {};
     const story = passage.currentChar ? require(`./story/${passage.currentChar}`) : null;
+
+    if(passage.currentStep === "finish"){
+        passage.finishTime = new Date();
+        await passage.save()
+    }
 
 
     let activity = null;
@@ -49,7 +54,7 @@ module.exports.getStatus = (passage) => {
     return {
         currentStep: passage.currentStep,
         score: passage.score,
-        time: Math.round((passage.finishTime || new Date() - passage.startTime)/1000),
+        time: Math.round(((passage.finishTime || new Date()) - passage.startTime)/1000),
         availableChars,
         ...step,
         activity: activity||step.activity

@@ -22,7 +22,7 @@ router.post('/api/game/reset/', utils.authenticateToken, async (req, res) => {
 
         await passage.save();
 
-        return res.json(utils.getStatus(passage));
+        return res.json(await utils.getStatus(passage));
     } catch (e) {
         console.log(e);
         res.status(500).send()

@@ -12,7 +12,7 @@ router.post('/api/game/login/', async (req, res) => {
         if(!user)
             return res.status(404).send("Not Found");
 
-        if(!code)
+        if(code !== user.code)
             return res.status(400).send();
 
         let player = await Player.findOne({userId: user._id.toString()});

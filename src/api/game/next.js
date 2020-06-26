@@ -17,23 +17,22 @@ router.post('/api/game/next/', utils.authenticateToken, async (req, res) => {
 
 
         if (passage.currentStep === "chooseScreen")
-            return res.json(utils.getStatus(passage));
+            return res.json(await utils.getStatus(passage));
 
         if (passage.currentStep === "captions")
-            return res.json(utils.getStatus(passage));
+            return res.json(await utils.getStatus(passage));
 
         if (passage.currentStep === "finish"){
             passage.currentStep = "captions";
-            passage.finishTime = new Date();
-            console.log(passage.finishTime - new Date())
+            console.log(passage.finishTime)
             await passage.save();
-            return res.json(utils.getStatus(passage));
+            return res.json(await utils.getStatus(passage));
         }
 
         if (passage.currentStep === "start"){
             passage.currentStep = "chooseScreen";
             await passage.save();
-            return res.json(utils.getStatus(passage));
+            return res.json(await utils.getStatus(passage));
         }
 
         console.log(answer)
@@ -117,7 +116,7 @@ router.post('/api/game/next/', utils.authenticateToken, async (req, res) => {
 
         await passage.save();
 
-        return res.json(utils.getStatus(passage));
+        return res.json(await utils.getStatus(passage));
 
     } catch (e) {
         console.log(e);

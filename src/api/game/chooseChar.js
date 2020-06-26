@@ -20,7 +20,7 @@ router.post('/api/game/chooseChar/',utils.authenticateToken, async (req, res) =>
 
         await pass.save();
 
-        return res.json(utils.getStatus(pass));
+        return res.json(await utils.getStatus(pass));
     } catch (e) {
         console.log(e);
         res.status(500).send()
