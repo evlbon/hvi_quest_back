@@ -2,7 +2,8 @@
   "steps": [
     {
       "id": "1",
-      "char": "boy",
+      "char": "bortsov",
+      "emotion": "sad",
       "background": "backstage1.png",
       "position": "left",
       "activity": {
@@ -14,7 +15,7 @@
 
     {
       "id": "2",
-      "char": "boy",
+      "char": "bortsov",
       "background": "backstage1.png",
       "position": "left",
       "activity": {
@@ -26,7 +27,7 @@
 
     {
       "id": "3",
-      "char": "girl",
+      "char": "kraskovskaya",
       "background": "backstage1.png",
       "position": "right",
       "activity": {
@@ -54,7 +55,7 @@
 
     {
       "id": "4.1",
-      "char": "boy",
+      "char": "bortsov",
       "background": "backstage1.png",
       "position": "left",
       "activity": {
@@ -66,7 +67,7 @@
 
     {
       "id": "4.2",
-      "char": "boy",
+      "char": "bortsov",
       "background": "backstage1.png",
       "position": "left",
       "activity": {
@@ -79,7 +80,7 @@
 
     {
       "id": "5",
-      "char": "boy",
+      "char": "bortsov",
       "background": "backstage1.png",
       "position": "right",
       "activity": {
@@ -107,13 +108,62 @@
 
     {
       "id": "6",
-      "char": "boy",
+      "char": "bortsov",
       "background": "backstage1.png",
       "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Конец"
       },
+      "nextStep": "7"
+    },
+
+    {
+      "id": "7",
+      "char": "bortsov",
+      "background": "backstage1.png",
+      "position": "right",
+      "activity": {
+        "type": "letter",
+        "text": "Напиши письмо"
+      },
+      "nextStep": "8"
+    },
+
+
+    {
+      "id": "8",
+      "char": "doctor",
+      "background": "backstage1.png",
+      "position": "right",
+      "activity": {
+        "type": "timechoice",
+        "text": "Выбор на время",
+        "time": 5,
+        "default": "ответ 1",
+        "options": [
+          {
+            "label": "ответ 1",
+            "weight": 0,
+            "nextStep": "finish"
+          },
+          {
+            "label": "ответ 2",
+            "weight": 1,
+            "nextStep": "finish"
+          },
+          {
+            "label": "ответ 3",
+            "weight": 0,
+            "nextStep": "finish"
+          }
+        ]
+      }
+    },
+
+
+    {
+      "id": "finish",
       "nextStep": "0"
     }
   ]

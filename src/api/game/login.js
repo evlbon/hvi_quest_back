@@ -6,11 +6,14 @@ const router = Router();
 
 router.post('/api/game/login/', async (req, res) => {
     try {
-        const {phone} = req.body;
+        const {phone, code} = req.body;
         const user = await User.findOne({phone});
 
         if(!user)
             return res.status(404).send("Not Found");
+
+        if(!code)
+            return res.status(400).send();
 
         let player = await Player.findOne({userId: user._id.toString()});
 
@@ -22,9 +25,6 @@ router.post('/api/game/login/', async (req, res) => {
             await passage.save();
             await player.save();
         }
-
-        console.log(player)
-
 
         return res.send(utils.generateAccessToken({
             userId: user._id,

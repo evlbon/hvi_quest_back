@@ -12,11 +12,23 @@ const passageSchema = new Schema({
 
     currentStep: {
         type: String,
-        default: "0"
+        default: "start"
     },
 
     currentChar:{
         type: String,
+        required: false
+    },
+
+    startTime:{
+        type: Date,
+        default(){
+            return new Date();
+        }
+    },
+
+    finishTime:{
+        type: Date,
         required: false
     },
 

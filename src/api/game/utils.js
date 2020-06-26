@@ -16,7 +16,7 @@ module.exports.authenticateToken = function authenticateToken(req, res, next) {
 
 
 module.exports.generateAccessToken = function generateAccessToken(params) {
-    return jwt.sign(params, process.env.ACCESS_TOKEN_SECRET, {})
+    return jwt.sign(params, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '30d'})
 
     // return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' })
 };
@@ -24,9 +24,9 @@ module.exports.generateAccessToken = function generateAccessToken(params) {
 
 module.exports.getStatus = (passage) => {
     const availableChars = {
-        girl: !passage.activities.girl.length,
-        boy: !passage.activities.boy.length,
-        virus: !passage.activities.virus.length,
+        girl: passage.activities.girl.length?'finished':'available',
+        boy: passage.activities.boy.length?'finished':passage.activities.girl.length?'available':'locked',
+        virus: passage.activities.virus.length?'finished':passage.activities.boy.length?'available':'locked',
     };
 
     let step = {};
@@ -49,6 +49,7 @@ module.exports.getStatus = (passage) => {
     return {
         currentStep: passage.currentStep,
         score: passage.score,
+        time: Math.round((passage.finishTime || new Date() - passage.startTime)/1000),
         availableChars,
         ...step,
         activity: activity||step.activity

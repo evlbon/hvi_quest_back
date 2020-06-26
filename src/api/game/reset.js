@@ -11,8 +11,9 @@ router.post('/api/game/reset/', utils.authenticateToken, async (req, res) => {
         const passage = await Passage.findOne({_id: currentPass});
 
         passage.currentChar = null;
-        passage.currentStep = "0";
+        passage.currentStep = "start";
         passage.score = 0;
+        passage.startTime = new Date();
         passage.activities = {
             girl:[],
             boy:[],

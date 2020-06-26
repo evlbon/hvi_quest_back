@@ -5,18 +5,38 @@ const utils = require('./utils');
 const router = Router();
 
 
-router.post('/api/game/next/',utils.authenticateToken, async (req, res) => {
+router.post('/api/game/next/', utils.authenticateToken, async (req, res) => {
     try {
         const {answer} = req.body;
         const {currentPass} = req.params;
         const passage = await Passage.findOne({_id: currentPass});
 
         // console.log(passage)
-        if(!passage.currentChar || !passage.currentStep)
-            res.status(400).send();
+        // if (!passage.currentChar || !passage.currentStep)
+        //     return res.status(400).send();
 
-        if(passage.currentStep === "0")
+
+        if (passage.currentStep === "chooseScreen")
             return res.json(utils.getStatus(passage));
+
+        if (passage.currentStep === "captions")
+            return res.json(utils.getStatus(passage));
+
+        if (passage.currentStep === "finish"){
+            passage.currentStep = "captions";
+            passage.finishTime = new Date();
+            console.log(passage.finishTime - new Date())
+            await passage.save();
+            return res.json(utils.getStatus(passage));
+        }
+
+        if (passage.currentStep === "start"){
+            passage.currentStep = "chooseScreen";
+            await passage.save();
+            return res.json(utils.getStatus(passage));
+        }
+
+        console.log(answer)
 
 
         const story = require(`./story/${passage.currentChar}`);
@@ -24,37 +44,75 @@ router.post('/api/game/next/',utils.authenticateToken, async (req, res) => {
 
         const step = story.steps.find(step => step.id === passage.currentStep);
 
-
-        console.log(step)
+        // console.log(step)
 
 
         switch (step.activity.type) {
-            case "dialog":{
+            case "dialog": {
                 passage.currentStep = step.nextStep;
                 break;
             }
 
-            case "radio":{
-                const ans = step.activity.options.find(ans => ans.label === answer );
+            case "radio": {
+                const ans = step.activity.options.find(ans => ans.label === answer);
 
-                console.log(step.activity.options)
-                console.log(step)
+                passage.activities[passage.currentChar].push({
+                    step: passage.currentStep,
+                    answer
+                });
 
                 passage.score += ans.weight;
                 passage.currentStep = ans.nextStep;
                 break;
             }
 
-            case "checklist":{
+            case 'checklist': {
                 answer.forEach(answer => {
-                    const ans = step.activity.options.find(ans => ans.label === answer ) || {weight: 0};
+                    const ans = step.activity.options.find(ans => ans.label === answer) || {weight: 0};
                     passage.score += ans.weight;
                 });
 
+                passage.activities[passage.currentChar].push({
+                    step: passage.currentStep,
+                    answer
+                });
+
+                console.log(step)
+
                 passage.currentStep = step.nextStep;
+                break;
+            }
+
+            case 'timechoice': {
+                const ans = step.activity.options.find(ans => ans.label === answer);
+
+                passage.activities[passage.currentChar].push({
+                    step: passage.currentStep,
+                    answer
+                });
+
+                console.log(ans, answer)
+                passage.score += ans.weight;
+                passage.currentStep = ans.nextStep;
+                break;
+            }
+
+            case 'letter': {
+                passage.activities[passage.currentChar].push({
+                    step: passage.currentStep,
+                    answer
+                });
+
+                console.log(answer)
+                passage.currentStep = step.nextStep;
+                break;
+            }
+
+            case null:{
+                passage.currentStep = step.nextStep;
+                break;
             }
         }
-
 
 
         await passage.save();
@@ -65,7 +123,6 @@ router.post('/api/game/next/',utils.authenticateToken, async (req, res) => {
         console.log(e);
         res.status(500).send()
     }
-
 });
 
 
