@@ -32,6 +32,10 @@ const userSchema = new Schema({
     phone:{
         type: String,
         required: false
+    },
+    code:{
+        type: String,
+        required: false
     }
 });
 
