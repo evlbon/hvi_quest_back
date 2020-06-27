@@ -12,6 +12,7 @@ router.post('/api/game/login/', async (req, res) => {
         if(!user)
             return res.status(404).send("Not Found");
 
+        console.log(code, user.code)
         if(code !== user.code)
             return res.status(400).send();
 

@@ -41,11 +41,22 @@ module.exports.getStatus = async (passage) => {
     let activity = null;
     if(story){
         step = story.steps.find(step => step.id === passage.currentStep) || {};
-        if(step.activity && step.activity.options){
+        if(step.activity&&step.activity.type === 'letterReading' ) {
+            const letterActivity = passage.activities.girl.find(act => act.type === 'letter');
+            const letter = letterActivity ? letterActivity.answer : 'нету письма(';
+            activity = {
+                ...step.activity,
+                type: 'letterReading',
+                text: letter,
+            };
+        }
+
+        else if(step.activity && step.activity.options){
             activity = {
                 ...step.activity,
                 options: step.activity.options.map(step => step.label)
             };
+
         }
     }
 

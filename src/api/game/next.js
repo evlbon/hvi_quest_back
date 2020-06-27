@@ -98,11 +98,16 @@ router.post('/api/game/next/', utils.authenticateToken, async (req, res) => {
 
             case 'letter': {
                 passage.activities[passage.currentChar].push({
+                    type: 'letter',
                     step: passage.currentStep,
                     answer
                 });
 
-                console.log(answer)
+                passage.currentStep = step.nextStep;
+                break;
+            }
+
+            case 'letterReading': {
                 passage.currentStep = step.nextStep;
                 break;
             }

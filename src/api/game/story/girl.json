@@ -145,20 +145,32 @@
           {
             "label": "ответ 1",
             "weight": 0,
-            "nextStep": "finish"
+            "nextStep": "9"
           },
           {
             "label": "ответ 2",
             "weight": 1,
-            "nextStep": "finish"
+            "nextStep": "9"
           },
           {
             "label": "ответ 3",
             "weight": 0,
-            "nextStep": "finish"
+            "nextStep": "9"
           }
         ]
       }
+    },
+
+    {
+      "id": "9",
+      "char": "nobody",
+      "emotion": "sad",
+      "background": "letterBackground.png",
+      "position": "letter",
+      "activity": {
+        "type": "letterReading"
+      },
+      "nextStep": "finish"
     },
 
 
