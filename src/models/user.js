@@ -36,7 +36,7 @@ const userSchema = new Schema({
     code:{
         type: String,
         required: false
-    },
+    }
 });
 
 module.exports = model('User', userSchema, 'users');
