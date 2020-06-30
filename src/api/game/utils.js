@@ -37,7 +37,6 @@ module.exports.getStatus = async (passage) => {
         await passage.save()
     }
 
-
     let activity = null;
     if(story){
         step = story.steps.find(step => step.id === passage.currentStep) || {};

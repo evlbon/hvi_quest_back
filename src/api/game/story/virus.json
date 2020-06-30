@@ -1,0 +1,1145 @@
+{
+  "steps": [
+    {
+      "id": "1",
+      "char": "virus",
+      "emotion": "happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Доброго времени суток, друзья!"
+      },
+      "nextStep": "2"
+    },
+    {
+      "id": "2",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Стоит, наверное, представиться - меня зовут ВИЧ. Может быть вы уже обо мне наслышаны."
+      },
+      "nextStep": "3" 
+    },
+    {
+      "id": "3",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я поражаю клетки человека."
+      },
+      "nextStep": "4" 
+    },
+    {
+      "id": "4",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "И больше всего меня радуют люди, которые не верят в мое существование. Их называют…",
+        "options": [
+          {
+            "label": "Ученые",
+            "weight": 0,
+            "nextStep": "5"
+          },
+          {
+            "label": "Отказники",
+            "weight": 0,
+            "nextStep": "5"
+          },
+          {
+            "label": "ВИЧ-диссиденты",
+            "weight": 0,
+            "nextStep": "5"
+          },
+          {
+            "label": "хипстеры",
+            "weight": 0,
+            "nextStep": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Их зовут ВИЧ-диссидентами."
+      },
+      "nextStep": "6" 
+    },
+    {
+      "id": "6",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Даже когда я полностью захватываю организм человека, они не верят в мою природу."
+      },
+      "nextStep": "7" 
+    },
+    {
+      "id": "7",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Якобы просто какой-то другой вирус их убивает, а я совсем ни при чем."
+      },
+      "nextStep": "8" 
+    },
+    {
+      "id": "8",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Они также думают, что от меня можно избавиться. Но это не так!"
+      },
+      "nextStep": "9" 
+    },
+    {
+      "id": "9",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мы с моим обладателем друзья навек."
+      },
+      "nextStep": "10" 
+    },
+    {
+      "id": "10",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Хочу представить одного человека, в чьем теле я живу и развиваюсь."
+      },
+      "nextStep": "11" 
+    },
+    {
+      "id": "11",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Александр Борцов."
+      },
+      "nextStep": "12" 
+    },
+    {
+      "id": "12",
+      "char": "palebortsov",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "right",
+      "activity": {
+        "type": null
+      },
+      "nextStep": "13" 
+    },
+    {
+      "id": "13",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Он заразился не так давно, но мы уже с ним подружились."
+      },
+      "nextStep": "14" 
+    },
+    {
+      "id": "14",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Вот сейчас он находится в толпе, рядом с другими людьми."
+      },
+      "nextStep": "15" 
+    },
+    {
+      "id": "15",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Они обсуждают моих собратьев."
+      },
+      "nextStep": "16" 
+    },
+    {
+      "id": "16",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Вы знаете стадии ВИЧ-инфекции?"
+      },
+      "nextStep": "17" 
+    },
+    {
+      "id": "17",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Стадия инкубации",
+        "options": [
+          {
+            "label": "Активная репликация вируса в организме с выработкой антител",
+            "weight": 0,
+            "nextStep": "20"
+          },
+          {
+            "label": "Период от момента заражения до проявления реакции организма",
+            "weight": 20,
+            "nextStep": "20"
+          },
+          {
+            "label": "Потеря массы и заболевание другими тяжелыми заболеваниями",
+            "weight": 0,
+            "nextStep": "20"
+          },
+          {
+            "label": "Медленное прогрессирование иммунодефицита",
+            "weight": 0,
+            "nextStep": "20"
+          },
+          {
+            "label": "Поражение органов и неспособность организма бороться",
+            "weight": 0,
+            "nextStep": "20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Первая стадия инкубации - это когда человек еще даже не может как-то выявить..."
+      },
+      "nextStep": "21" 
+    },
+    {
+      "id": "21",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Что мы с ним уже живем бок о бок."
+      },
+      "nextStep": "22" 
+    },
+    {
+      "id": "22",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Стадия первичных проявлений",
+        "options": [
+          {
+            "label": "Медленное прогрессирование иммунодефицита",
+            "weight": 0,
+            "nextStep": "23"
+          },
+          {
+            "label": "Поражение органов и неспособность организма бороться",
+            "weight": 0,
+            "nextStep": "23"
+          },
+          {
+            "label": "Потеря массы и заболевание другими тяжелыми заболеваниями",
+            "weight": 0,
+            "nextStep": "23"
+          },
+          {
+            "label": "Активная репликация вируса в организме с выработкой антител",
+            "weight": 15,
+            "nextStep": "23"
+          }
+        ]
+      }
+    }, 
+    {
+      "id": "23",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Во время стадии первичных проявлений человек может обнаружить...но не меня, а антитела."
+      },
+      "nextStep": "24" 
+    },
+    {
+      "id": "24",
+      "char": "virus",
+      "background": "square.png",
+      "emotion":"happy",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Субклиническая стадия",
+        "options": [
+          {
+            "label": "Потеря массы и заболевание другими тяжелыми заболеваниями",
+            "weight": 0,
+            "nextStep": "25"
+          },
+          {
+            "label": "Медленное прогрессирование иммунодефицита",
+            "weight": 10,
+            "nextStep": "25"
+          },
+          {
+            "label": "Поражение органов и неспособность организма бороться",
+            "weight": 0,
+            "nextStep": "25"
+          }
+        ]
+      }
+    },
+    {
+      "id": "25",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Во время субклинической стадии я все больше поражаю клетки моего приятеля..."
+      },
+      "nextStep": "26" 
+    },
+    {
+      "id": "26",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Из-за чего происходит медленное прогрессирование иммунодефицита."
+      },
+      "nextStep": "27" 
+    },
+    {
+      "id": "27",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Стадия вторичных заболеваний",
+        "options": [
+          {
+            "label": "Поражение органов и неспособность организма бороться",
+            "weight": 0,
+            "nextStep": "28"
+          },
+          {
+            "label": "Потеря массы и заболевание другими тяжелыми заболеваниями",
+            "weight": 5,
+            "nextStep": "28"
+          }
+        ]
+      }
+    },
+    {
+      "id": "28",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Во время стадии вторичных заболеваний на моего друга нападают другие вирусы."
+      },
+      "nextStep": "29" 
+    },
+    {
+      "id": "29",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Нам становится немного тесно, а носителю очень больно."
+      },
+      "nextStep": "30" 
+    },
+    {
+      "id": "30",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Терминальная стадия",
+        "options": [
+          {
+            "label": "Поражение органов и неспособность организма бороться",
+            "weight": 0,
+            "nextStep": "31"
+          }
+        ]
+      }
+    },
+    {
+      "id": "31",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Когда наступает терминальная стадия, человек не способен бороться со мной."
+      },
+      "nextStep": "32" 
+    },
+    {
+      "id": "32",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "В такие моменты я ликую, потому что смог полностью завладеть носителем."
+      },
+      "nextStep": "33" 
+    },
+    {
+      "id": "33",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Больше он не может оказывать сопротивление."
+      },
+      "nextStep": "34" 
+    },
+    {
+      "id": "34",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Сейчас Александр стоит в толпе."
+      },
+      "nextStep": "35" 
+    },
+    {
+      "id": "35",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Можно ли сейчас атаковать других, рядом стоящих?",
+        "options": [
+          {
+            "label": "Нападаем, братья!",
+            "weight": 0,
+            "nextStep": "36"
+          },
+          {
+            "label": "Зачем? Ведь нам ничего не светит.",
+            "weight": 0,
+            "nextStep": "36"
+          }
+        ]
+      }
+    },
+    {
+      "id": "36",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Эх, как было бы просто, если бы я мог путешествовать по воздуху, но не могу!"
+      },
+      "nextStep": "37" 
+    },
+    {
+      "id": "37",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "А что насчет поцелуев и объятий?",
+        "options": [
+          {
+            "label": "Через слюну или пот мои клетки нападут на здорового человека!",
+            "weight": 0,
+            "nextStep": "38"
+          },
+          {
+            "label": "Ничего не выйдет.",
+            "weight": 0,
+            "nextStep": "38"
+          }
+        ]
+      }
+    },
+    {
+      "id": "38",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "К сожалению, я не могу передаваться через слюну, пот."
+      },
+      "nextStep": "39" 
+    },
+    {
+      "id": "39",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "square.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Меня слишком мало, чтобы я мог кого-то так заразить."
+      },
+      "nextStep": "40" 
+    },
+    {
+      "id": "40",
+      "char": "palebortsov",
+      "emotion": "dissatisfied",
+      "background": "tentIn.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ай!"
+      },
+      "nextStep": "41" 
+    },
+    {
+      "id": "41",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "tentIn.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Сейчас Александр проходит экспресс-тест на ВИЧ."
+      },
+      "nextStep": "42" 
+    },
+    {
+      "id": "42",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "tentIn.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Врач проколол палец, из него вытекла капля крови."
+      },
+      "nextStep": "43" 
+    },
+    {
+      "id": "43",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "tentIn.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "Как думаете, удастся ли мне заразить врача?",
+        "options": [
+          {
+            "label": "Практически нет",
+            "weight": 0,
+            "nextStep": "44"
+          },
+          {
+            "label": "Есть большой шанс",
+            "weight": 0,
+            "nextStep": "44"
+          }
+        ]
+      }
+    },
+    {
+      "id": "44",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "tentIn.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Теоретически это возможно, если врач не будет соблюдать меры предосторожности."
+      },
+      "nextStep": "46" 
+    },
+    {
+      "id": "46",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "tentIn.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "К моему сожалению, статистика таких случаев нулевая."
+      },
+      "nextStep": "47" 
+    },
+    {
+      "id": "47",
+      "char": "kraskovskaya",
+      "emotion": "happy",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Саш, какой у тебя результат?"
+      },
+      "nextStep": "48" 
+    },
+    {
+      "id": "48",
+      "char": "palebortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Две полоски."
+      },
+      "nextStep": "49" 
+    },
+    {
+      "id": "49",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну здравствуй! Рад, что теперь наше знакомство наконец-таки взаимно!"
+      },
+      "nextStep": "50" 
+    },
+    {
+      "id": "50",
+      "char": "kraskovskaya",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Как такое могло произойти?"
+      },
+      "nextStep": "51" 
+    },
+    {
+      "id": "51",
+      "char":"palebortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Может меня кто-нибудь укусил? Какое-нибудь животное?"
+      },
+      "nextStep": "52" 
+    },
+    {
+      "id": "52",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Не, чушь полная."
+      },
+      "nextStep": "53" 
+    },
+    {
+      "id": "53",
+      "char":"palebortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Может я трогал чьи-то чужие вещи? И случайно подцепил?"
+      },
+      "nextStep": "54" 
+    },
+    {
+      "id": "54",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Эх, если бы все так было просто! Но нет."
+      },
+      "nextStep": "55" 
+    },
+    {
+      "id": "55",
+      "char":"palebortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А еще я решил однажды себе на память тату набить. Может тогда?"
+      },
+      "nextStep": "56" 
+    },
+    {
+      "id": "56",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Да, мог! И еще как!"
+      },
+      "nextStep": "57" 
+    },
+    {
+      "id": "57",
+      "char": "virus",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Но инструменты были стерильными. У меня бы не получилось."
+      },
+      "nextStep": "58" 
+    },
+    {
+      "id": "58",
+      "char":"palebortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "На мартовских сборах у меня секс был с одной девчонкой."
+      },
+      "nextStep": "59" 
+    },
+    {
+      "id": "59",
+      "char":"palebortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Видимо от нее я и заразился."
+      },
+      "nextStep": "60" 
+    },
+    {
+      "id": "60",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Бинго! И огромная благодарность той девочке!"
+      },
+      "nextStep": "61" 
+    },
+    {
+      "id": "61",
+      "char":"mom",
+      "emotion":"shocked",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Саша, с тобой такое не могло произойти."
+      },
+      "nextStep": "62" 
+    },
+    {
+      "id": "62",
+      "char":"mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Как же мне теперь другим людям в глаза смотреть? А отцу что мы расскажем?"
+      },
+      "nextStep": "63" 
+    },
+    {
+      "id": "63",
+      "char": "virus",
+      "emotion": "neutral",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Когда Саша рассказывал маме о своей болезни, то бишь обо мне..."
+      },
+      "nextStep": "64" 
+    },
+    {
+      "id": "64",
+      "char": "virus",
+      "emotion":"angry",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мне стало так мерзко - ей за меня стыдно!"
+      },
+      "nextStep": "65" 
+    },
+    {
+      "id": "65",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мои дорогие люди... Людииишечки..."
+      },
+      "nextStep": "66" 
+    },
+    {
+      "id": "66",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мы - вирусы! Мы просто иная форма жизни."
+      },
+      "nextStep": "67" 
+    },
+    {
+      "id": "67",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "И как и всё живое, мы хотим размножаться!"
+      },
+      "nextStep": "68" 
+    },
+    {
+      "id": "68",
+      "char": "virus",
+      "emotion":"angry",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Вы можете сколько угодно гнобить или презирать наших носителей..."
+      },
+      "nextStep": "69" 
+    },
+    {
+      "id": "69",
+      "char": "virus",
+      "emotion":"angry",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Но они для нас просто способ существования"
+      },
+      "nextStep": "70" 
+    },
+    {
+      "id": "70",
+      "char": "virus",
+      "emotion":"angry",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Вы говорите, что я распространяюсь... Нет, это вы меня распространяете."
+      },
+      "nextStep": "71" 
+    },
+    {
+      "id": "71",
+      "char": "virus",
+      "emotion":"angry",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Своей неосторожностью, глупостью, самонадеянностью."
+      },
+      "nextStep": "72" 
+    },
+    {
+      "id": "72",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "canteenMom.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "За что вам от меня и моих собратьев огромное вирусное спасибо!"
+      },
+      "nextStep": "73" 
+    },
+    {
+      "id": "73",
+      "char": "palebortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Честно смотреть в глаза буду."
+      },
+      "nextStep": "74" 
+    },
+    {
+      "id": "74",
+      "char": "palebortsov",
+      "emotion":"dissatisfied",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Мам, тебя волнует, что я опозорю тебя??? Как ты можешь?"
+      },
+      "nextStep": "75" 
+    },
+    {
+      "id": "75",
+      "char": "palebortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Смотри, что мне другие пишут."
+      },
+      "nextStep": "76" 
+    },
+    {
+      "id": "76",
+      "char": "virus",
+      "emotion":"happy",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Какая трогательная сцена! Я бы расплакался, честно, но не способен."
+      },
+      "nextStep": "77" 
+    },
+    {
+      "id": "77",
+      "char": "palebortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Я записался к врачу, можешь со мной сходить."
+      },
+      "nextStep": "78" 
+    },
+    {
+      "id": "78",
+      "char": "virus",
+      "emotion":"fear",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Он собирается к врачу."
+      },
+      "nextStep": "79" 
+    },
+    {
+      "id": "79",
+      "char": "virus",
+      "emotion":"fear",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Саша не даст мне дальше захватывать его клетки, если начнет принимать препараты..."
+      },
+      "nextStep": "80" 
+    },
+    {
+      "id": "80",
+      "char": "viruspsycho",
+      "emotion":"neutral",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Саша, я ворвался в твою жизнь без лишних вопросов."
+      },
+      "nextStep": "81" 
+    },
+    {
+      "id": "81",
+      "char": "viruspsycho",
+      "emotion":"neutral",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Теперь ты не сможешь отвязаться от меня."
+      },
+      "nextStep": "82" 
+    },
+    {
+      "id": "82",
+      "char": "viruspsycho",
+      "emotion":"angry",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Но зачем ты начал принимать терапию! Я же тоже хочу жить!!!"
+      },
+      "nextStep": "83" 
+    },
+    {
+      "id": "83",
+      "char": "viruspsycho",
+      "emotion":"angry",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Начав принимать таблетки, ты не даешь мне возможность разрастаться в твоем теле."
+      },
+      "nextStep": "84" 
+    },
+    {
+      "id": "84",
+      "char": "viruspsycho",
+      "emotion":"angry",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я не могу заражать других людей!"
+      },
+      "nextStep": "85" 
+    },
+    {
+      "id": "85",
+      "char": "viruspsycho",
+      "emotion":"angry",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ты не даешь мне сполна вдохнуть и почувствовать свою власть над тобой!"
+      },
+      "nextStep": "86" 
+    },
+    {
+      "id": "86",
+      "char": "viruspsycho",
+      "emotion":"angry",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Но помни..."
+      },
+      "nextStep": "87" 
+    },
+    {
+      "id": "87",
+      "char": "viruspsycho",
+      "emotion":"angry",
+      "background": "prison.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Если ты прервешь терапию, я снова атакую  твои клетки, и ты не сможешь сопротивляться."
+      },
+      "nextStep": "finish"
+    }
+  ]
+}

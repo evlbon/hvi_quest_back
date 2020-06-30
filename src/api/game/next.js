@@ -46,6 +46,7 @@ router.post('/api/game/next/', utils.authenticateToken, async (req, res) => {
         // console.log(step)
 
 
+        console.log(step);
         switch (step.activity.type) {
             case "dialog": {
                 passage.currentStep = step.nextStep;

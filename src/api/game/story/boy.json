@@ -1,494 +1,261 @@
 {
-  "steps": [
+    "steps": [
     {
       "id": "1",
-      "char": "bortsov",
+      "char": "lena",
+      "emotion": "neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Саша, давай заканчивай. Пора собираться."
+        "text": "Слушай, Борцов, а зачем ты тут вообще?"
       },
       "nextStep": "2"
     },
     {
       "id": "2",
-      "char": "kraskovskaya",
+      "char": "bortsov",
+      "emotion": "neutral",
       "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Подожди меня еще чуть-чуть"
+        "text": "Сашка попросила."
       },
       "nextStep": "3"
     },
     {
       "id": "3",
-      "char": "kraskovskaya",
-      "background": "school.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Ты же не хочешь, чтобы звукооператор испортил наш последний звонок. "
-      },
-      "nextStep": "4"
-    },
-    {
-      "id": "4",
       "char": "lena",
+      "emotion": "neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Сегодня воскресенье, так что его нет в школе. Поговорю с ним завтра."
+        "text": "Вечно ты за ней бегаешь как хвостик."
+      },
+      "nextStep": "4"
+    },      
+    {
+      "id": "4",
+      "char": "bortsov",
+      "emotion": "angry",
+      "background": "school.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Неправда. Она попросила помочь с организацией, я и помогаю."
       },
       "nextStep": "5"
     },
     {
       "id": "5",
-      "char": "kraskovskaya",
+      "char": "lena",
+      "emotion":"angry",
       "background": "school.png",
-      "position": "left",
+      "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Хорошо."
+        "text": "А выглядит все так, будто ты в нее влюблен."
       },
       "nextStep": "6"
     },
     {
       "id": "6",
-      "char": "kraskovskaya",
+      "char": "bortsov",
+      "emotion":"angry",
       "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ребята, сценарий нужно выучить всем. Осталось всего две репетиции."
-      },
-      "nextStep": "7"
-    },
-    {
-      "id": "7",
-      "char": "lena",
-      "background": "school.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Борцов, ты главное поуверенней будь."
+        "text": "Ты сама прекрасно понимаешь, что нет."
       },
       "nextStep": "8"
     },
     {
       "id": "8",
       "char": "lena",
+      "emotion": "angry",
       "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Мямлить на сцене непривлекательно."
+        "text": "Что ты там пробурчал?"
       },
       "nextStep": "9"
     },
     {
       "id": "9",
-      "char": "bortsov",
+      "char": "kraskovskaya",
+      "emotion": "dissatisfied",
       "background": "school.png",
       "position": "right",
       "activity": {
-        "type": null,
-        "text": null
+        "type": "dialog",
+        "text": "Ребята, объявите перемирие хотя бы до выпускного!"
       },
       "nextStep": "10"
     },
     {
       "id": "10",
-      "char": "kraskovskaya",
+      "char": "bortsov",
+      "emotion": "neutral",
       "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Объявите перемирие хотя бы до выпускного."
+        "text": "Красковская, заканчивай скорее и пойдем уже."
       },
       "nextStep": "11"
     },
     {
       "id": "11",
-      "char": "lena",
+      "char": "kraskovskaya",
+      "emotion": "neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "И не подумаю."
+        "text": "Проводишь меня до площади?"
       },
       "nextStep": "12"
     },
     {
       "id": "12",
       "char": "bortsov",
+      "emotion": "neutral",
       "background": "school.png",
-      "position": "right",
+      "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ладно, нам пора. Саш, идем уже!"
+        "text": "Да, конечно."
       },
-      "nextStep": "13"
+      "nextStep": "13.1"
     },
     {
-      "id": "13",
+      "id": "13.1",
       "char": "bortsov",
+      "emotion":"angry",
+      "background": "school.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ох, уж эта Лена… Гуляли с ней всего несколько месяцев, а теперь ни на шаг не отстает."
+      },
+      "nextStep": "13.2"
+    },
+    {
+      "id": "13.2",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "school.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Да и чего она так привязалась к Красковской. Может ревнует?"
+      },
+      "nextStep": "13.3"
+    },
+    {
+      "id": "13.3",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "school.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ой, да черт с ней. Рассталась она со мной, а не я с ней."
+      },
+      "nextStep": "13.4"
+    },
+    {
+      "id": "13.4",
+      "char": "lena",
+      "emotion":"angry",
       "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Зря ты меня, конечно, на это все подписала."
+        "text": "Ты слишком часто ездишь на сборы!"
+      },
+      "nextStep": "13.5"
+    },
+    {
+      "id": "13.5",
+      "char": "lena",
+      "emotion":"angry",
+      "background": "school.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А чем это ты там занимаешься?"
+      },
+      "nextStep": "13.6"
+    },
+    {
+      "id": "13.6",
+      "char": "lena",
+      "emotion": "angry",
+      "background": "school.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А у тебя точно тренировки каждый день?"
       },
       "nextStep": "14"
     },
     {
       "id": "14",
       "char": "kraskovskaya",
-      "background": "school.png",
-      "position": "left",
+      "emotion": "surprised",
+      "background": "squareModerator.png",
+      "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Саша, у тебя здорово получается выступать на сцене!"
+        "text": "О, а что это там?"
       },
       "nextStep": "15"
     },
     {
       "id": "15",
-      "char": "kraskovskaya",
-      "background": "school.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Кто иначе наш класс будет представлять?"
-      },
-      "nextStep": "16"
-    },
-    {
-      "id": "16",
       "char": "bortsov",
-      "background": "school.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "мы с тобой дружим с первого класса, поэтому меня легче всего сагитировать?"
-      },
-      "nextStep": "17"
-    },
-    {
-      "id": "17",
-      "char": "kraskovskaya",
-      "background": "school.png",
+      "emotion": "neutral",
+      "background": "squareModerator.png",
       "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Ой, да ну тебя. Ты мог отказаться в любой момент."
-      },
-      "nextStep": "18"
-    },
-    {
-      "id": "18",
-      "char": "bortsov",
-      "background": "school.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Ты всегда так говоришь, а потом обижаешься."
-      },
-      "nextStep": "19"
-    },
-    {
-      "id": "19",
-      "char": "kraskovskaya",
-      "background": "school.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Лучше проводи меня до площади? Мне нужно забрать фартук."
-      },
-      "nextStep": "20"
-    },
-    {
-      "id": "20",
-      "char": "bortsov",
-      "background": "school.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Да, конечно."
-      },
-      "nextStep": "21"
-    },
-    {
-      "id": "21",
-      "char": "nobody",
-      "background": "school.png",
-      "position": null,
-      "activity": {
-        "type": "radio",
-        "text": "Определи, какие отношения между героями:",
-        "options": [
-          {
-            "label": "Дружеские",
-            "weight": 0,
-            "nextStep": "22"
-          },
-          {
-            "label": "Любовные",
-            "weight": 0,
-            "nextStep": "22"
-          },
-          {
-            "label": "Сопернические",
-            "weight": 0,
-            "nextStep": "22"
-          },
-          {
-            "label": "Доверительные",
-            "weight": 0,
-            "nextStep": "22"
-          }
-        ]
-      }
-    },
-    {
-      "id": "22",
-      "char": "kraskovskaya",
-      "background": "square.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "О, а что это там?"
-      },
-      "nextStep": "23"
-    },
-    {
-      "id": "23",
-      "char": "bortsov",
-      "background": "square.png",
-      "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Не знаю, давай подойдем поближе."
       },
-      "nextStep": "24"
+      "nextStep": "16.1"
     },
     {
-      "id": "24",
+      "id": "16.1",
       "char": "moderator",
+      "emotion": "happy",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Рад вас всех приветствовать в этот день!"
       },
-      "nextStep": "25"
+      "nextStep": "16.2"
     },
     {
-      "id": "25",
+      "id": "16.2",
       "char": "moderator",
+      "emotion": "neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Сегодня третье воскресенье мая! Всемирный день памяти жертв СПИДа."
       },
-      "nextStep": "26"
+      "nextStep": "17"
     },
     {
-      "id": "26",
+      "id": "17",
       "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "radio",
-        "text": "В первую очередь я хочу спросить, знаете ли вы чем отличается ВИЧ от СПИДа?",
-        "options": [
-          {
-            "label": "Выкликнуть ответ",
-            "weight": 0,
-            "nextStep": "28.1"
-          },
-          {
-            "label": "Промолчать",
-            "weight": 0,
-            "nextStep": "28.2"
-          }
-        ]
-      }
-    },
-    {
-      "id": "28.1",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "radio",
-        "text": "В первую очередь я хочу спросить, знаете ли вы чем отличается ВИЧ от СПИДа?",
-        "options": [
-          {
-            "label": "Это одно и то же",
-            "weight": 0,
-            "nextStep": "29"
-          },
-          {
-            "label": "ВИЧ может развиться у инфицированного СПИД",
-            "weight": 0,
-            "nextStep": "29"
-          },
-          {
-            "label": "Это две разные болезни",
-            "weight": 0,
-            "nextStep": "29"
-          },
-          {
-            "label": "ВИЧ - первая стадия заражения СПИД",
-            "weight": 0,
-            "nextStep": "29"
-          },
-          {
-            "label": "ВИЧ - вирус, СПИД - синдром иммунодефицита",
-            "weight": 0,
-            "nextStep": "29"
-          }
-        ]
-      }
-    },
-    {
-      "id": "28.2",
-      "char": "crowd",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "ВИЧ - вирус, а СПИД - синдром иммунодефицита"
-      },
-      "nextStep": "29"
-    },
-    {
-      "id": "29",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Ребята, вы все молодцы, но о разнице между ВИЧ и СПИДом должен знать каждый."
-      },
-      "nextStep": "30"
-    },
-    {
-      "id": "30",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "ВИЧ - вирус, вызывающий дефицит иммунитета."
-      },
-      "nextStep": "31"
-    },
-    {
-      "id": "31",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "СПИД - синдром, когда у зараженного ВИЧ слишком ослабленный иммунитет."
-      },
-      "nextStep": "32"
-    },
-    {
-      "id": "32",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "СПИД - последняя и самая опасная стадия ВИЧ."
-      },
-      "nextStep": "33"
-    },
-    {
-      "id": "33",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "При СПИДе любая болезнь может погубить человека, потому что организм не способен бороться."
-      },
-      "nextStep": "34"
-    },
-    {
-      "id": "34",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "radio",
-        "text": "Как долго человек может жить с ВИЧ?",
-        "options": [
-          {
-            "label": "3 года",
-            "weight": 0,
-            "nextStep": "35"
-          },
-          {
-            "label": "Как здоровый человек",
-            "weight": 0,
-            "nextStep": "35"
-          },
-          {
-            "label": "11 лет",
-            "weight": 0,
-            "nextStep": "35"
-          },
-          {
-            "label": "1 год",
-            "weight": 0,
-            "nextStep": "35"
-          }
-        ]
-      }
-    },
-    {
-      "id": "35",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Зараженные ВИЧ могут жить долго и счастливо так же, как и здоровые."
-      },
-      "nextStep": "36"
-    },
-    {
-      "id": "36",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Просто им нужно в течение всей дальнейшей жизни проходить антиретровирусную терапию."
-      },
-      "nextStep": "37"
-    },
-    {
-      "id": "37",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Терапия поможет оттянуть развитие СПИДа."
-      },
-      "nextStep": "38"
-    },
-    {
-      "id": "38",
-      "char": "moderator",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -498,84 +265,54 @@
           {
             "label": "Сразу после заражения",
             "weight": 0,
-            "nextStep": "39"
+            "nextStep": "18.1"
           },
           {
             "label": "Спустя неделю",
             "weight": 0,
-            "nextStep": "39"
+            "nextStep": "18.1"
           },
           {
             "label": "Спустя месяц",
             "weight": 0,
-            "nextStep": "39"
+            "nextStep": "18.1"
           },
           {
             "label": "Спустя три месяца",
-            "weight": 0,
-            "nextStep": "39"
+            "weight": 10,
+            "nextStep": "18.1"
           }
         ]
       }
     },
     {
-      "id": "39",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
+      "id": "18.1",
+      "char": "bortsov",
+      "emotion": "sad",
+      "background": "squareModerator.png",
+      "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Определять, болен ли человек ВИЧ, лучше на первоначальных стадиях."
+        "text": "Хм… А с Ленкой мы расстались примерно три месяца назад."
       },
-      "nextStep": "40"
+      "nextStep": "18.2"
     },
     {
-      "id": "40",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
+      "id": "18.2",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "squareModerator.png",
+      "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Существует такой термин “серонегативное окно”."
+        "text": "Я так расстроен тогда был. Еще и на сборы нужно было ехать"
       },
-      "nextStep": "41"
+      "nextStep": "19"
     },
     {
-      "id": "41",
+      "id": "19",
       "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "На этапе от 2 до 8 недель с момента заражения, в организме нет большого количества антител и антигенов"
-      },
-      "nextStep": "42"
-    },
-    {
-      "id": "42",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Из-за этого специализированные тесты могут не обнаружить заболевание."
-      },
-      "nextStep": "43"
-    },
-    {
-      "id": "43",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Поэтому рекомендуется делать тесты спустя три месяца после возможного заражения."
-      },
-      "nextStep": "44"
-    },
-    {
-      "id": "44",
-      "char": "moderator",
+      "emotion": "neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -585,251 +322,176 @@
         "options": [
           {
             "label": "Парентеральный",
-            "weight": 0
+            "weight": 5
           },
           {
             "label": "Вертикальный",
-            "weight": 0
+            "weight": -10
           },
           {
             "label": "Горизонтальный",
-            "weight": 0
+            "weight": 5
           },
           {
             "label": "Половой",
-            "weight": 0
+            "weight": 5
           },
           {
             "label": "Катаральный",
-            "weight": 0
+            "weight": -10
           }
         ]
       },
-      "nextStep": "45"
+      "nextStep": "20"
     },
     {
-      "id": "45",
+      "id": "20",
       "char": "moderator",
+      "emotion": "neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Существует три пути передачи ВИЧ."
+        "text": "Существует три пути передачи ВИЧ. Половой путь через любой незащищенный секс..."
       },
-      "nextStep": "46"
+      "nextStep": "21.1"
     },
     {
-      "id": "46",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Половой путь через любой незащищенный секс."
-      },
-      "nextStep": "47"
-    },
-    {
-      "id": "47",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Парентеральный путь через любое искусственное проникновение в тело, т.е. через иглу, скальпель или рану."
-      },
-      "nextStep": "48"
-    },
-    {
-      "id": "48",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Наркоманы могут взять чужой шприц или переспать с человеком без презерватива, поэтому многие из них заражены ВИЧ."
-      },
-      "nextStep": "49"
-    },
-    {
-      "id": "49",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Вертикальный путь - от матери к ребенку."
-      },
-      "nextStep": "50"
-    },
-    {
-      "id": "50",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "ВИЧ-инфицированная мать может передать ребенку вирус во время беременности, родов или кормления грудью."
-      },
-      "nextStep": "51"
-    },
-    {
-      "id": "51",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "А сейчас я предлагаю вам абсолютно бесплатно сдать экспресс-тест на ВИЧ."
-      },
-      "nextStep": "52"
-    },
-    {
-      "id": "52",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Процедура не займет много времени. Результат вы получите в течение десяти минут."
-      },
-      "nextStep": "53"
-    },
-    {
-      "id": "53",
-      "char": "moderator",
-      "background": "square.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "И не бойтесь сдавать тест! Лучше перестраховаться! Всем спасибо, вы прекрасная публика!"
-      },
-      "nextStep": "54"
-    },
-    {
-      "id": "54",
+      "id": "21.1",
       "char": "bortsov",
-      "background": "tentOut.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Сань, ну серьезно. С нами же все хорошо. Лучше бы пошли домой."
-      },
-      "nextStep": "55"
-    },
-    {
-      "id": "55",
-      "char": "kraskovskaya",
-      "background": "tentOut.png",
+      "emotion": "neutral",
+      "background": "squareModerator.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Борцов, мы должны заботиться о своей безопасности и здоровье близких."
+        "text": "Половой... Через секс. Ну не все же заражены..."
       },
-      "nextStep": "56"
+      "nextStep": "21.2"
     },
     {
-      "id": "56",
-      "char": "kraskovskaya",
-      "background": "tentOut.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Не сдать тест на ВИЧ, когда есть возможность, - крайне безответственно."
-      },
-      "nextStep": "57"
-    },
-    {
-      "id": "57",
+      "id": "21.2",
       "char": "bortsov",
-      "background": "tentOut.png",
+      "emotion":"neutral",
+      "background": "squareModerator.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Хотя, если с незнакомкой, то кто его знает…"
+      },
+      "nextStep": "21.3"
+    },
+    {
+      "id": "21.3",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "squareModerator.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Блин, с той девчонкой на сборах…"
+      },
+      "nextStep": "21.4"
+    },
+    {
+      "id": "21.4",
+      "char": "bortsov",
+      "emotion":"dissatisfied",
+      "background": "squareModerator.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Тьфу-тьфу, даже вспоминать не хочу!"
+      },
+      "nextStep": "22"
+    },
+    {
+      "id": "22",
+      "char": "kraskovskaya",
+      "emotion":"happy",
+      "background": "squareModerator.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Не нравится мне это все."
+        "text": "Идем сдавать кровь!"
       },
-      "nextStep": "58"
+      "nextStep": "23"
     },
     {
-      "id": "58",
+      "id": "23",
+      "char": "bortsov",
+      "emotion": "fear",
+      "background": "squareModerator.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "В смысле? Ты чего?"
+      },
+      "nextStep": "24"
+    },
+    {
+      "id": "24",
       "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "squareModerator.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Идем-идем, не бойся."
+      },
+      "nextStep": "25"
+    },
+    {
+      "id": "25",
+      "char": "kraskovskaya",
+      "emotion": "happy",
+      "background": "squareModerator.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Сейчас экспресс-тест на ВИЧ сдадим."
+      },
+      "nextStep": "26.1"
+    },
+    {
+      "id": "26.1",
+      "char": "bortsov",
+      "emotion":"angry",
       "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ой, я уже следущая."
+        "text": "Да не хочу я сдавать никакой тест!"
       },
-      "nextStep": "59"
+      "nextStep": "26.2"
     },
     {
-      "id": "59",
-      "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Добрый день!"
-      },
-      "nextStep": "60"
-    },
-    {
-      "id": "60",
-      "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Присаживайтесь. Давайте пальчик."
-      },
-      "nextStep": "61"
-    },
-    {
-      "id": "61",
-      "char": "kraskovskaya",
-      "background": "tentIn.png",
+      "id": "26.2",
+      "char": "bortsov",
+      "emotion": "fear",
+      "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ага. Здравствуйте."
+        "text": "Вдруг что-то выявится. Я же себе места найти не смогу"
       },
-      "nextStep": "62"
+      "nextStep": "27"
     },
     {
-      "id": "62",
-      "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Не бойтесь. Все пройдет быстро."
-      },
-      "nextStep": "63"
-    },
-    {
-      "id": "63",
-      "char": "kraskovskaya",
+      "id": "27",
+      "char": "bortsov",
+      "emotion":"fear",
       "background": "tentIn.png",
       "position": "left",
       "activity": {
         "type": "dialog",
         "text": "Ай!"
       },
-      "nextStep": "64"
+      "nextStep": "28"
     },
     {
-      "id": "64",
+      "id": "28",
       "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Потерпите. Держите салфетку около 10 минут."
-      },
-      "nextStep": "65"
-    },
-    {
-      "id": "65",
-      "char": "doctor",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -837,408 +499,1851 @@
         "text": "Вы знаете, как расшифровать тест?",
         "options": [
           {
-            "label": "Если одна полоска, результат положительный",
+            "label": "Если одна полоска, результат отрицательный",
             "weight": 0,
-            "nextStep": "66"
+            "nextStep": "29"
           },
           {
             "label": "Если две полоски, результат отрицательный",
             "weight": 0,
-            "nextStep": "66"
+            "nextStep": "29"
           },
           {
             "label": "Если две полоски, результат положительный",
-            "weight": 0,
-            "nextStep": "66"
+            "weight": 10,
+            "nextStep": "29"
           }
         ]
       }
     },
     {
-      "id": "66",
+      "id": "28",
       "char": "doctor",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Если две полоски, то результат положительный."
       },
-      "nextStep": "67"
+      "nextStep": "29"
     },
     {
-      "id": "67",
+      "id": "29",
       "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Если ни одной полоски, то тест не сработал."
-      },
-      "nextStep": "68"
-    },
-    {
-      "id": "68",
-      "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Иначе результат отрицательный."
-      },
-      "nextStep": "69"
-    },
-    {
-      "id": "69",
-      "char": "doctor",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Хочу напомнить, что любая тестовая система может выдать неверный результат."
       },
-      "nextStep": "70"
+      "nextStep": "30"
     },
     {
-      "id": "70",
+      "id": "30",
       "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "У вас же не было опасного поведения?"
-      },
-      "nextStep": "71"
-    },
-    {
-      "id": "71",
-      "char": "kraskovskaya",
-      "background": "tentIn.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Ну вроде как нет… А куда мне можно обратиться, если увижу две полоски?"
-      },
-      "nextStep": "72"
-    },
-    {
-      "id": "72",
-      "char": "doctor",
-      "background": "tentIn.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "В случае чего обращайтесь в любое медицинское учреждение или к нам в центр. Держите визитку."
-      },
-      "nextStep": "73"
-    },
-    {
-      "id": "73",
-      "char": "kraskovskaya",
-      "background": "tentIn.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Спасибо."
-      },
-      "nextStep": "74"
-    },
-    {
-      "id": "74",
-      "char": "doctor",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Берегите себя. До свидания!"
       },
-      "nextStep": "75"
+      "nextStep": "31.1"
     },
     {
-      "id": "75",
+      "id": "31.1",
       "char": "bortsov",
+      "emotion":"neutral",
       "background": "tentOut.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Ну, Красковская, ты опять меня подписала на что-то."
-      },
-      "nextStep": "76"
-    },
-    {
-      "id": "76",
-      "char": "kraskovskaya",
-      "background": "tentIn.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Зато точно будешь знать, что ничем не болен."
+        "text": "Одна полоска."
       },
-      "nextStep": "77"
+      "nextStep": "31.2"
     },
     {
-      "id": "76",
+      "id": "31.2",
       "char": "bortsov",
+      "emotion":"fear",
       "background": "tentOut.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Пойдем домой."
-      },
-      "nextStep": "77"
-    },
-    {
-      "id": "77",
-      "char": "kraskovskaya",
-      "background": "yard.png",
       "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Ну все! Время прошло. Что там у тебя?"
-      },
-      "nextStep": "78"
-    },
-    {
-      "id": "78",
-      "char": "bortsov",
-      "background": "yard.png",
-      "position": "right",
-      "activity": {
-        "type": null,
-        "text": null
-      },
-      "nextStep": "79"
-    },
-    {
-      "id": "79",
-      "char": "kraskovskaya",
-      "background": "yard.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "У меня один минус."
-      },
-      "nextStep": "80"
-    },
-    {
-      "id": "80",
-      "char": "paleBortsov",
-      "background": "yard.png",
-      "position": "right",
-      "activity": {
-        "type": null,
-        "text": null
-      },
-      "nextStep": "81"
-    },
-    {
-      "id": "81",
-      "char": "kraskovskaya",
-      "background": "yard.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Саша, все в порядке?"
-      },
-      "nextStep": "82"
-    },
-    {
-      "id": "82",
-      "char": "paleBortsov",
-      "background": "yard.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "Черт!"
-      },
-      "nextStep": "83"
-    },
-    {
-      "id": "83",
-      "char": "kraskovskaya",
-      "background": "yard.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Саш, какой у тебя результат?"
-      },
-      "nextStep": "84"
-    },
-    {
-      "id": "84",
-      "char": "paleBortsov",
-      "background": "yard.png",
-      "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Две полоски."
       },
-      "nextStep": "85"
+      "nextStep": "31.3"
     },
     {
-      "id": "85",
-      "char": "kraskovskaya",
-      "background": "yard.png",
+      "id": "31.3",
+      "char": "bortsov",
+      "emotion":"fear",
+      "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Так… Спокойно. Давай присядем."
+        "text": "Одна или две."
       },
-      "nextStep": "86"
+      "nextStep": "31.4"
     },
     {
-      "id": "86",
-      "char": "paleBortsov",
-      "background": "yard.png",
-      "position": "right",
-      "activity": {
-        "type": null,
-        "text": null
-      },
-      "nextStep": "87"
-    },
-    {
-      "id": "87",
-      "char": "kraskovskaya",
-      "background": "yard.png",
+      "id": "31.4",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ну и как такое могло произойти?"
+        "text": "Да точно одна!"
       },
-      "nextStep": "88"
+      "nextStep": "31.5" 
     },
     {
-      "id": "88",
-      "char": "paleBortsov",
-      "background": "yard.png",
-      "position": "right",
-      "activity": {
-        "type": "dialog",
-        "text": "А черт его знает…"
-      },
-      "nextStep": "89"
-    },
-    {
-      "id": "89",
-      "char": "kraskovskaya",
-      "background": "yard.png",
+      "id": "31.5",
+      "char": "bortsov",
+      "emotion":"fear",
+      "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "В любом случае тесты бывают ложноположительными."
+        "text": "А может две? Я же не святой…"
       },
-      "nextStep": "90"
+      "nextStep": "32.1" 
     },
     {
-      "id": "90",
+      "id": "32.1",
       "char": "kraskovskaya",
-      "background": "yard.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Тебе нужно еще раз сдать кровь на анализ."
-      },
-      "nextStep": "91"
-    },
-    {
-      "id": "91",
-      "char": "paleBortsov",
-      "background": "yard.png",
+      "emotion":"happy",
+      "background": "tentOut.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Ага. Предлагаешь идти туда, где точно есть вич-инфицированные?"
+        "text": "Да не переживай ты так!"
       },
-      "nextStep": "92"
+      "nextStep": "32.2" 
     },
     {
-      "id": "92",
+      "id": "32.2",
       "char": "kraskovskaya",
-      "background": "yard.png",
+      "emotion":"neutral",
+      "background": "tentOut.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Зато точно будешь знать, что ничем не болен."
+      },
+      "nextStep": "33" 
+    },
+    {
+      "id": "33",
+      "char": "bortsov",
+      "emotion": "sad",
+      "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Саша, ты не помнишь слова того человека на сцене? Это обычные люди."
+        "text": "Ага..."
       },
-      "nextStep": "93"
+      "nextStep": "34" 
     },
     {
-      "id": "93",
+      "id": "34",
       "char": "kraskovskaya",
-      "background": "yard.png",
-      "position": "left",
-      "activity": {
-        "type": "dialog",
-        "text": "Просто они больны. Ты же не осуждаешь людей с диабетом? Так почему к другим так относишься?"
-      },
-      "nextStep": "94"
-    },
-    {
-      "id": "94",
-      "char": "paleBortsov",
+      "emotion":"happy",
       "background": "yard.png",
       "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну все! Время прошло. Что там у тебя?"
+      },
+      "nextStep": "35" 
+    },
+    {
+      "id": "35",
+      "char": "kraskovskaya",
+      "emotion":"happy",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "У меня один минус."
+      },
+      "nextStep": "36" 
+    },
+    {
+      "id": "36",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Две полоски."
+      },
+      "nextStep": "37" 
+    },
+    {
+      "id": "37",
+      "char": "bortsov",
+      "emotion":"fear",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Черт, а может в глазах двоится?"
+      },
+      "nextStep": "38" 
+    },
+    {
+      "id": "38",
+      "char": "bortsov",
+      "emotion":"fear",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Н-н-нет! НЕТ… Твою ****!"
+      },
+      "nextStep": "39" 
+    },
+    {
+      "id": "39",
+      "char": "kraskovskaya",
+      "emotion":"skeptical",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "С тобой все в порядке?"
+      },
+      "nextStep": "40" 
+    },
+    {
+      "id": "40",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "radio",
+        "text": "На тесте две полоски. Что ей сказать?",
+        "options": [
+          {
+            "label": "Соврать",
+            "weight": 0,
+            "nextStep": "41.1"
+          },
+          {
+            "label": "Сказать правду",
+            "weight": 0,
+            "nextStep": "42.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "41.1",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Тоже одна полоска."
+      },
+      "nextStep": "41.2" 
+    },
+    {
+      "id": "41.2",
+      "char": "kraskovskaya",
+      "emotion":"happy",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну вот! А ты боялся."
+      },
+      "nextStep": "41.3" 
+    },
+    {
+      "id": "41.3",
+      "char": "kraskovskaya",
+      "emotion":"skeptical",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А чего глаза влажные?"
+      },
+      "nextStep": "41.4" 
+    },
+    {
+      "id": "41.4",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Все... все в порядке."
+      },
+      "nextStep": "41.5" 
+    },
+    {
+      "id": "41.5",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я мог что-то подцепить на сборах…"
+      },
+      "nextStep": "41.6" 
+    },
+    {
+      "id": "41.6",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "А как родителям рассказать?"
+      },
+      "nextStep": "41.7" 
+    },
+    {
+      "id": "41.7",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Как вообще жить с таким диагнозом?"
+      },
+      "nextStep": "41.8" 
+    },
+    {
+      "id": "41.8",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Как с людьми общаться после этого?"
+      },
+      "nextStep": "41.9" 
+    },
+    {
+      "id": "41.9",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "А как им доверять?"
+      },
+      "nextStep": "41.10" 
+    },
+    {
+      "id": "41.10",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Вдруг Красковская уйдет и больше никогда со мной не заговорит?"
+      },
+      "nextStep": "41.11" 
+    },
+    {
+      "id": "41.11",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Выкладывай, что не так. Я никому не расскажу в любом случае."
+      },
+      "nextStep": "41.12" 
+    },
+    {
+      "id": "41.12",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "А тебя не обманешь."
+      },
+      "nextStep": "41.13" 
+    },
+    {
+      "id": "41.13",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Тест оказался положительным."
+      },
+      "nextStep": "43" 
+    },
+    {
+      "id": "42.1",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я мог что-то подцепить на сборах…"
+      },
+      "nextStep": "42.2" 
+    },
+    {
+      "id": "42.2",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "А как родителям рассказать?"
+      },
+      "nextStep": "42.3" 
+    },
+    {
+      "id": "42.3",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Как вообще жить с таким диагнозом?"
+      },
+      "nextStep": "42.4" 
+    },
+    {
+      "id": "42.4",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Как с людьми общаться после этого?"
+      },
+      "nextStep": "42.5" 
+    },
+    {
+      "id": "42.5",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "А как им доверять?"
+      },
+      "nextStep": "42.6" 
+    },
+    {
+      "id": "42.6",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Вдруг Красковская уйдет и больше никогда со мной не заговорит?"
+      },
+      "nextStep": "42.7" 
+    },
+    {
+      "id": "42.7",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Две полоски."
+      },
+      "nextStep": "42.8" 
+    },
+    {
+      "id": "42.8",
+      "char": "kraskovskaya",
+      "emotion":"surprised",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Черт."
+      },
+      "nextStep": "43" 
+    },
+    {
+      "id": "43",
+      "char": "kraskovskaya",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Так… Спокойно."
+      },
+      "nextStep": "44" 
+    },
+    {
+      "id": "44",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Тесты бывают ложноположительными."
+      },
+      "nextStep": "45"
+    },
+    {
+      "id": "45",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Тебе нужно еще раз сдать анализ на кровь."
+      },
+      "nextStep": "46"
+    },
+    {
+      "id": "46",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Предлагаешь идти туда, где точно есть вич-инфицированные?"
+      },
+      "nextStep": "47" 
+    },
+    {
+      "id": "47",
+      "char": "kraskovskaya",
+      "emotion":"dissatisfied",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Саша, ты не помнишь слова того человека на сцене?"
+      },
+      "nextStep": "48" 
+    },
+    {
+      "id": "48",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Это обычные люди. Просто больны."
+      },
+      "nextStep": "49" 
+    },
+    {
+      "id": "48",
+      "char": "kraskovskaya",
+      "emotion":"dissatisfied",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ты же не осуждаешь людей с диабетом? Так почему к другим так относишься?"
+      },
+      "nextStep": "49" 
+    },
+    {
+      "id": "49",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
       "activity": {
         "type": "dialog",
         "text": "Потому что они могут всех заразить, тогда не останется ни одного здорового."
       },
-      "nextStep": "95"
+      "nextStep": "50" 
     },
     {
-      "id": "95",
+      "id": "50",
       "char": "kraskovskaya",
+      "emotion":"dissatisfied",
       "background": "yard.png",
-      "position": "left",
+      "position": "right",
       "activity": {
         "type": "dialog",
-        "text": " Мы с тобой в 21 веке живем! Медицина продвинулась."
+        "text": "Мы с тобой в 21 веке живем! Медицина продвинулась."
       },
-      "nextStep": "96"
+      "nextStep": "51" 
     },
     {
-      "id": "96",
+      "id": "51",
       "char": "kraskovskaya",
+      "emotion":"neutral",
       "background": "yard.png",
-      "position": "left",
+      "position": "right",
       "activity": {
         "type": "dialog",
         "text": "Просто зараженному нужно принимать лекарства."
       },
-      "nextStep": "97"
+      "nextStep": "52" 
     },
     {
-      "id": "97",
-      "char": "paleBortsov",
+      "id": "52",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "right",
-      "activity": {
-        "type": null,
-        "text": null
-      },
-      "nextStep": "98"
-    },
-    {
-      "id": "98",
-      "char": "kraskovskaya",
-      "background": "yard.png",
-      "position": "left",
       "activity": {
         "type": "dialog",
         "text": "Выкладывай. Что с тобой происходило за эти полгода?"
       },
-      "nextStep": "99"
+      "nextStep": "53" 
     },
     {
-      "id": "99",
-      "char": "paleBortsov",
+      "id": "53",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Видимо я заразился, когда был секс с той девчонкой на сборах"
+      },
+      "nextStep": "54.1" 
+    },
+    {
+      "id": "54.1",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну за полгода всякое происходило."
+      },
+      "nextStep": "54.2" 
+    },
+    {
+      "id": "54.2",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Как мы уже выяснили - объятия, столовые приборы и укусы от животных не передают ВИЧ."
+      },
+      "nextStep": "54.3" 
+    },
+    {
+      "id": "54.3",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "И татуировка моя даже ни при чем."
+      },
+      "nextStep": "54.4" 
+    },
+    {
+      "id": "54.4",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ты же знаешь, я спортсмен."
+      },
+      "nextStep": "54.5" 
+    },
+    {
+      "id": "54.5",
+      "char": "bortsov",
+      "emotion":"dissatisfied",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "На мартовских сборах у меня секс был с одной девчонкой."
+      },
+      "nextStep": "55.1" 
+    },
+    {
+      "id": "55.1",
+      "char": "kraskovskaya",
+      "emotion":"surprised",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Да ничего такого."
+        "text": "Я её знаю?"
+      },
+      "nextStep": "55.2" 
+    },
+    {
+      "id": "55.2",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Можешь не отвечать, если не хочешь."
+      },
+      "nextStep": "56" 
+    },
+    {
+      "id": "56",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Нет, навряд ли. У меня даже её контактов нет."
+      },
+      "nextStep": "57" 
+    },
+    {
+      "id": "57",
+      "char": "kraskovskaya",
+      "emotion":"skeptical",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А зачем тогда вы занимались сексом?"
+      },
+      "nextStep": "58" 
+    },
+    {
+      "id": "58",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "checklist",
+        "text": "Ну знаешь, люди иногда это делают с незнакомцами:",
+        "needSelect": 5,
+        "options": [
+          {
+            "label": "В порыве страсти",
+            "weight": 5
+          },
+          {
+            "label": "Потому что им одиноко",
+            "weight": 5
+          },
+          {
+            "label": "Потому что это весело",
+            "weight": 5
+          },
+          {
+            "label": "Потому что они в неадекватном состоянии",
+            "weight": 5
+          },
+          {
+            "label": "Потому что хотят пожениться",
+            "weight": 5
+          }
+        ]
+      },
+      "nextStep": "59"
+    },
+    {
+      "id": "59",
+      "char": "kraskovskaya",
+      "emotion":"skeptical",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А ты почему этого захотел?"
+      },
+      "nextStep": "60" 
+    },
+    {
+      "id": "60",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Потому что зол был на Лену. Хотелось отомстить."
+      },
+      "nextStep": "60.1"
+    },
+    {
+      "id": "60.1",
+      "char": "kraskovskaya",
+      "emotion":"surprised",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Отомстить?"
+      },
+      "nextStep": "61"
+    },
+    {
+      "id": "61",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ага. Мы расстались перед сборами."
+      },
+      "nextStep": "61.1" 
+    },
+    {
+      "id": "61.1",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Она хотела больше времени проводить с учебниками."
+      },
+      "nextStep": "61.2" 
+    },
+    {
+      "id": "61.2",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "И я её не осуждаю, честно. Но у меня и свои дела были. Тренировки, школа, друзья…"
+      },
+      "nextStep": "61.3" 
+    },
+    {
+      "id": "61.3",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "В общем, времени я ей мало уделял, она и бросила меня."
+      },
+      "nextStep": "61.4" 
+    },
+    {
+      "id": "61.4",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я был так зол и огорчен..."
+      },
+      "nextStep": "62" 
+    },
+    {
+      "id": "62",
+      "char": "kraskovskaya",
+      "emotion": "sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну дела… А Ленка вся извелась, по ней видно."
+      },
+      "nextStep": "63"
+    },
+    {
+      "id": "63",
+      "char": "kraskovskaya",
+      "emotion":"skeptical",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А что там с другой? Презервативом пользовались?"
+      },
+      "nextStep": "64"
+    },
+    {
+      "id": "64",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Она сказала, что на гормональных сидит. Я подумал, почему бы и не попробовать без."
+      },
+      "nextStep": "65" 
+    },
+    {
+      "id": "65",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Как я мог так ошибиться. Эх, ну и дела."
+      },
+      "nextStep": "66" 
+    },
+    {
+      "id": "66",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "radio",
+        "text": "И что ты дальше делать будешь?",
+        "options": [
+          {
+            "label": "Буду лечиться.",
+            "weight": 0,
+            "nextStep": "68"
+          },
+          {
+            "label": "Оставлю все как есть",
+            "weight": 0,
+            "nextStep": "67.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "67.1",
+      "char": "kraskovskaya",
+      "emotion":"dissatisfied",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Так нельзя поступать!"
+      },
+      "nextStep": "67.2" 
+    },
+    {
+      "id": "67.2",
+      "char": "kraskovskaya",
+      "emotion":"dissatisfied",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Саша, я могу лично с тобой пойти в центр, чтобы ты пересдал анализы."
+      },
+      "nextStep": "67.3" 
+    },
+    {
+      "id": "67.3",
+      "char": "kraskovskaya",
+      "emotion":"dissatisfied",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Можем вместе рассказать твоей маме."
+      },
+      "nextStep": "67.4" 
+    },
+    {
+      "id": "67.4",
+      "char": "kraskovskaya",
+      "emotion":"sad",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ты будешь дальше жить. Просто немного по-другому."
+      },
+      "nextStep": "68" 
+    },
+    {
+      "id": "68",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Пиши - звони в любой момент. Я отвечу."
+      },
+      "nextStep": "69" 
+    },
+    {
+      "id": "69",
+      "char": "kraskovskaya",
+      "emotion":"neutral",
+      "background": "yard.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Для этого и нужны друзья."
+      },
+      "nextStep": "70" 
+    },
+    {
+      "id": "70",
+      "char": "bortsovjacket",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Саш, а какой жизнь будет после школы?"
+      },
+      "nextStep": "71" 
+    },
+    {
+      "id": "71",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Не знаю. Сейчас мы сделаем большой прыжок в неизвестность."
+      },
+      "nextStep": "72" 
+    },
+    {
+      "id": "72",
+      "char": "bortsovjacket",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я очень рад, что встретил тебя."
+      },
+      "nextStep": "73" 
+    },
+    {
+      "id": "73",
+      "char": "kraskovskayabant",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Встретимся еще. Не переживай."
+      },
+      "nextStep": "74" 
+    },
+    {
+      "id": "74",
+      "char": "bortsovjacket",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Честно, я думал, что ты убежишь и больше со мной никогда не заговоришь после того случая."
+      },
+      "nextStep": "75" 
+    },
+    {
+      "id": "75",
+      "char": "kraskovskayabant",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Какого ты обо мнения, Сашка, нехорошего! "
+      },
+      "nextStep": "76" 
+    },
+    {
+      "id": "76",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Я же не предатель, чтобы бросать тебя на произвол судьбы."
+      },
+      "nextStep": "77" 
+    },
+    {
+      "id": "77",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Тебе и без этого тяжело."
+      },
+      "nextStep": "78" 
+    },
+    {
+      "id": "78",
+      "char": "bortsovjacket",
+      "emotion":"sad",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Ты звони. Хотя бы иногда. Я скучать буду."
+      },
+      "nextStep": "79" 
+    },
+    {
+      "id": "79",
+      "char": "kraskovskayabant",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Годик подожди. Привыкни к новой жизни. А потом съезжай из этого маленького города."
+      },
+      "nextStep": "80" 
+    },
+    {
+      "id": "80",
+      "char": "kraskovskayabant",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Для тебя все еще все границы открыты."
+      },
+      "nextStep": "81" 
+    },
+    {
+      "id": "81",
+      "char": "bortsovjacket",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Посмотрим, Саш. Не от меня еще все зависит."
+      },
+      "nextStep": "82" 
+    },
+    {
+      "id": "82",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Родителям уже рассказал?"
+      },
+      "nextStep": "83" 
+    },
+    {
+      "id": "83",
+      "char": "bortsovjacket",
+      "emotion":"sad",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Нет. Сегодня анализы пришли. Тест оказался положительным."
+      },
+      "nextStep": "84" 
+    },
+    {
+      "id": "84",
+      "char": "kraskovskayabant",
+      "emotion":"sad",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Иди сюда. Обниму."
+      },
+      "nextStep": "85" 
+    }, 
+    {
+      "id": "85",
+      "char": null,
+      "background": "hugs.png",
+      "position": null,
+      "activity": {
+        "type": null,
+        "text": "kek"
+    },
+      "nextStep": "86"
+    },
+    {
+      "id": "86",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "И я для тебя кое-что подготовила."
+      },
+      "nextStep": "87" 
+    },
+    {
+      "id": "87",
+      "char": "kraskovskayabant",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Держи, это письмо. Не письмо к Онегину, конечно. Но..."
+      },
+      "nextStep": "88" 
+    },
+    {
+      "id": "88",
+      "char": "kraskovskayabant",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Хотя бы что-то на память. Открой, когда будет тяжко."
+      },
+      "nextStep": "89" 
+    },
+    {
+      "id": "89",
+      "char": "bortsovjacket",
+      "emotion":"happy",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Спасибо, Сашенька. "
+      },
+      "nextStep": "90" 
+    },
+    {
+      "id": "90",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Меня родители заждались, а твои, кажется, тоже."
+      },
+      "nextStep": "91" 
+    },
+    {
+      "id": "91",
+      "char": "bortsovjacket",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Прощай, Саша."
+      },
+      "nextStep": "92" 
+    },
+    {
+      "id": "92",
+      "char": "kraskovskayabant",
+      "emotion":"neutral",
+      "background": "lastCall.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Пока."
+      },
+      "nextStep": "93" 
+    },
+    {
+      "id": "93",
+      "char": "bortsov",
+      "emotion":"happy",
+      "background":"canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мам, привет!"
+      },
+      "nextStep": "94" 
+    },
+    {
+      "id": "94",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Привет, солнышко! Садись скорее, пока не остыло."
+      },
+      "nextStep": "95" 
+    },
+    {
+      "id": "95",
+      "char": "bortsov",
+      "emotion":"fear",
+      "background": "tentIn.png",
+      "position": "right",
+      "activity": {
+        "type": "radio",
+        "text": "Нужно маме обо всем рассказать.",
+        "options": [
+          {
+            "label": "Сказать ей правду в лоб.",
+            "weight": 0,
+            "nextStep": "96.1"
+          },
+          {
+            "label": "Начать издалека",
+            "weight": 0,
+            "nextStep": "97.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "96.1",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мам, у меня ВИЧ."
+      },
+      "nextStep": "96.2" 
+    },
+    {
+      "id": "96.2",
+      "char": "mom",
+      "emotion":"shocked",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Что?"
+      },
+      "nextStep": "96.3" 
+    },
+    {
+      "id": "96.3",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "У меня ВИЧ."
+      },
+      "nextStep": "96.4" 
+    },
+    {
+      "id": "96.4",
+      "char": "mom",
+      "emotion":"angry",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ты чего так надо мной шутишь? Совсем мать решил довести?"
+      },
+      "nextStep": "96.5" 
+    },
+    {
+      "id": "96.5",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я не шучу. Вот результаты анализов."
+      },
+      "nextStep": "96.6" 
+    },
+    {
+      "id": "96.6",
+      "char": "mom",
+      "emotion":"shocked",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ах..."
+      },
+      "nextStep": "96.7" 
+    },
+    {
+      "id": "96.7",
+      "char": "mom",
+      "emotion":"angry",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Если это все какой-то смешной розыгрыш, то пора заканчивать."
+      },
+      "nextStep": "96.8" 
+    },
+    {
+      "id": "96.8",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Это правда. Я вич-инфицированный."
+      },
+      "nextStep": "96.9" 
+    },
+    {
+      "id": "96.9",
+      "char": "mom",
+      "emotion":"angry",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну нет! Быть такого не может!"
+      },
+      "nextStep": "96.10" 
+    },
+    {
+      "id": "96.10",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Может, мам. Разное с людьми случается."
+      },
+      "nextStep": "96.11" 
+    },
+    {
+      "id": "96.11",
+      "char": "mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Но ты же у меня порядочный парень, сын хороший. Такое с тобой произойти не могло."
+      },
+      "nextStep": "98" 
+    },
+    {
+      "id": "97.1",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Спасибо, мам. А вот что ты думаешь о ВИЧ-инфицированных?"
+      },
+      "nextStep": "97.2" 
+    },
+    {
+      "id": "97.2",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Люди как люди. Просто нездоровые."
+      },
+      "nextStep": "97.3" 
+    },
+    {
+      "id": "97.3",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "И им стоит предохраняться, чтобы других не заразили."
+      },
+      "nextStep": "97.4" 
+    },
+    {
+      "id": "97.4",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "А чего спрашиваешь?"
+      },
+      "nextStep": "97.5"
+    },
+    {
+      "id": "97.5",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "А вот как бы ты отнеслась, если бы я был зараженным?"
+      },
+      "nextStep": "97.6" 
+    },
+    {
+      "id": "97.6",
+      "char": "mom",
+      "emotion":"shocked",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Шокирована была бы. Ты ведь у меня мальчик порядочный."
+      },
+      "nextStep": "97.7"
+    },
+    {
+      "id": "97.7",
+      "char": "bortsov",
+      "emotion":"dissatisfied",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Но такое же и с порядочными может произойти."
+      },
+      "nextStep": "97.8" 
+    },
+    {
+      "id": "97.8",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну да. Тут главное осторожным быть и иметь на плечах голову."
+      },
+      "nextStep": "97.9"
+    },
+    {
+      "id": "97.9",
+      "char": "bortsov",
+      "emotion":"dissatisfied",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мам, ты присядь."
+      },
+      "nextStep": "97.10" 
+    },
+    {
+      "id": "97.10",
+      "char": "bortsov",
+      "emotion":"dissatisfied",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "В общем, не знаю, как тебе это сообщить по-другому, но у меня выявили ВИЧ."
+      },
+      "nextStep": "97.11" 
+    },
+    {
+      "id": "97.11",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я уже повторно сдал анализы, результат положительный."
+      },
+      "nextStep": "97.12" 
+    },
+    {
+      "id": "97.12",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мамочка, спокойно. Держи, водички попей."
+      },
+      "nextStep": "98" 
+    },
+    {
+      "id": "98",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мы тут с Сашей Красковской прогуляться решили."
+      },
+      "nextStep": "99" 
+    },
+    {
+      "id": "99",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "На улице акция проводилась в честь жертв, погибших от СПИДа."
       },
       "nextStep": "100"
+    },
+    {
+      "id": "100",
+      "char": "bortsov",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Там экспресс-тест сделал и узнал обо всем."
+      },
+      "nextStep": "101"
+    },
+    {
+      "id": "101",
+      "char": "mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ну и как я другим людям в глаза смотреть буду?"
+      },
+      "nextStep": "102"
+    },
+    {
+      "id": "102",
+      "char": "mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Отцу как расскажем? А бабушке?"
+      },
+      "nextStep": "103"
+    },
+    {
+      "id": "103",
+      "char": "mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "И как же ты себе потом сможешь жену найти с таким недугом?"
+      },
+      "nextStep": "104"
+    },
+    {
+      "id": "104",
+      "char": "mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ой, Сашка, что же ты натворил…"
+      },
+      "nextStep": "105"
+    },
+    {
+      "id": "105",
+      "char": "bortsov",
+      "emotion": "neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Честно смотреть в глаза буду."
+      },
+      "nextStep": "106"
+    },
+    {
+      "id": "106",
+      "char": "bortsov",
+      "emotion":"angry",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Мам, тебя волнует, что я опозорю тебя??? Как ты можешь?"
+      },
+      "nextStep": "107"
+    },
+    {
+      "id": "107",
+      "char": "bortsov",
+      "emotion": "neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Смотри, что мне другие пишут."
+      },
+      "nextStep": "108"
+    },
+    {
+      "id": "108",
+      "char": "nobody",
+      "background": "letterBackground.png",
+      "position": "letter",
+      "activity": {
+        "type": "letterReading",
+        "text": null
+      },
+      "nextStep": "109"
+    },
+    {
+      "id": "109",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "О других будем думать потом. Что дальше-то делать?"
+      },
+      "nextStep": "110"
+    },
+    {
+      "id": "110",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Поговорить обо всем с врачом..."
+      },
+      "nextStep": "111"
+    },
+    {
+      "id": "111",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "До конца жизни проходить антиретровирусную терапию..."
+      },
+      "nextStep": "112"
+    },
+    {
+      "id": "111",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "И не уезжать на необитаемый остров без лекарств."
+      },
+      "nextStep": "112"
+    },
+    {
+      "id": "112",
+      "char": "mom",
+      "emotion":"sad",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Ох, сыночек. Как же тяжело быть родителем."
+      },
+      "nextStep": "113"
+    },
+    {
+      "id": "113",
+      "char": "bortsov",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "left",
+      "activity": {
+        "type": "dialog",
+        "text": "Я записался к врачу, можешь со мной сходить."
+      },
+      "nextStep": "114"
+    },
+    {
+      "id": "114",
+      "char": "mom",
+      "emotion":"neutral",
+      "background": "canteen.png",
+      "position": "right",
+      "activity": {
+        "type": "dialog",
+        "text": "Да, конечно."
+      },
+      "nextStep": "115"
+    },
+    {
+      "id": "115",
+      "char": "nobody",
+      "background": "lastCall.png",
+      "position": "center",
+      "activity": {
+        "type": "dialog",
+        "text": "Александр Борцов проходит антиретровирусную терапию. Он стал более осознанным юношей, задумался над словами Александры Красковской о поступлении в университет. Теперь они снова учатся вместе."
+      },
+      "nextStep": "chooseScreen"
     }
-  ]
+    ]
 }
-
