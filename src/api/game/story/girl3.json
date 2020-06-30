@@ -1,20 +1,9 @@
 {
   "steps": [
     {
-      "id": "1.0",
-      "char": "nobody",
-      "background": "school.png",
-      "position": "center",
-      "activity": {
-        "type": "dialog",
-        "text": "Школьный двор. Саша Красковская, Саша Борцов и Лена проводят репетицию последнего звонка"
-      },
-      "nextStep": "1"
-    },
-    {
       "id": "1",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -26,7 +15,7 @@
     {
       "id": "2",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "school.png",
       "position": "left",
       "activity": {
@@ -38,19 +27,19 @@
     {
       "id": "3",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ты же не хочешь, чтобы звукооператор испортил наш последний звонок."
+        "text": "Ты же не хочешь, чтобы звукооператор испортил наш последний звонок. "
       },
       "nextStep": "4"
     },
     {
       "id": "4",
       "char": "lena",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -62,7 +51,7 @@
     {
       "id": "5",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "school.png",
       "position": "left",
       "activity": {
@@ -74,7 +63,7 @@
     {
       "id": "6",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "school.png",
       "position": "left",
       "activity": {
@@ -86,7 +75,7 @@
     {
       "id": "7",
       "char": "lena",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -98,7 +87,7 @@
     {
       "id": "8",
       "char": "lena",
-      "emotion": "angry",
+      "emotion":"angry",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -110,7 +99,7 @@
     {
       "id": "9",
       "char": "bortsov",
-      "emotion": "angry",
+      "emotion":"angry",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -122,7 +111,7 @@
     {
       "id": "10",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "school.png",
       "position": "left",
       "activity": {
@@ -134,7 +123,7 @@
     {
       "id": "11",
       "char": "lena",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -146,7 +135,7 @@
     {
       "id": "12",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "school.png",
       "position": "right",
       "activity": {
@@ -158,8 +147,8 @@
     {
       "id": "13",
       "char": "bortsov",
-      "emotion": "dissatisfied",
-      "background": "schoolExit.png",
+      "emotion":"dissatisfied",
+      "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
@@ -170,8 +159,8 @@
     {
       "id": "14",
       "char": "kraskovskaya",
-      "emotion": "happy",
-      "background": "schoolExit.png",
+      "emotion":"happy",
+      "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
@@ -182,8 +171,8 @@
     {
       "id": "15",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
-      "background": "schoolExit.png",
+      "emotion":"skeptical",
+      "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
@@ -194,8 +183,8 @@
     {
       "id": "16",
       "char": "bortsov",
-      "emotion": "dissatisfied",
-      "background": "schoolExit.png",
+      "emotion":"dissatisfied",
+      "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
@@ -206,8 +195,8 @@
     {
       "id": "17",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
-      "background": "schoolExit.png",
+      "emotion":"dissatisfied",
+      "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
@@ -218,8 +207,8 @@
     {
       "id": "18",
       "char": "bortsov",
-      "emotion": "dissatisfied",
-      "background": "schoolExit.png",
+      "emotion":"dissatisfied",
+      "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
@@ -230,8 +219,8 @@
     {
       "id": "19",
       "char": "kraskovskaya",
-      "emotion": "happy",
-      "background": "schoolExit.png",
+      "emotion":"happy",
+      "background": "school.png",
       "position": "left",
       "activity": {
         "type": "dialog",
@@ -242,8 +231,8 @@
     {
       "id": "20",
       "char": "bortsov",
-      "emotion": "neutral",
-      "background": "schoolExit.png",
+      "emotion":"neutral",
+      "background": "school.png",
       "position": "right",
       "activity": {
         "type": "dialog",
@@ -254,7 +243,7 @@
     {
       "id": "21",
       "char": "nobody",
-      "background": "schoolExit.png",
+      "background": "school.png",
       "position": "center",
       "activity": {
         "type": "radio",
@@ -263,41 +252,30 @@
           {
             "label": "Дружеские",
             "weight": 10,
-            "nextStep": "22.1"
+            "nextStep": "22"
           },
           {
             "label": "Любовные",
             "weight": 0,
-            "nextStep": "22.1"
+            "nextStep": "22"
           },
           {
             "label": "Сопернические",
             "weight": 0,
-            "nextStep": "22.1"
+            "nextStep": "22"
           },
           {
             "label": "Доверительные",
             "weight": 10,
-            "nextStep": "22.1"
+            "nextStep": "22"
           }
         ]
       }
     },
     {
-      "id": "22.1",
-      "char": "nobody",
-      "background": "squareModerator.png",
-      "position": "center",
-      "activity": {
-        "type": "dialog",
-        "text": "Саша Борцов и Саша Красковская подходят к площади и видят толпу людей, стоящих возле сцены"
-      },
-      "nextStep": "22"
-    },
-    {
       "id": "22",
       "char": "kraskovskaya",
-      "emotion": "surprised",
+      "emotion":"surprised",
       "background": "squareModerator.png",
       "position": "left",
       "activity": {
@@ -309,7 +287,7 @@
     {
       "id": "23",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "squareModerator.png",
       "position": "right",
       "activity": {
@@ -321,7 +299,7 @@
     {
       "id": "24",
       "char": "moderator",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -333,7 +311,7 @@
     {
       "id": "25",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -345,7 +323,7 @@
     {
       "id": "26",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -383,7 +361,7 @@
     {
       "id": "29",
       "char": "moderator",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -395,7 +373,7 @@
     {
       "id": "30",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -407,19 +385,19 @@
     {
       "id": "31",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "СПИД - синдром, когда у инфицированного ВИЧ слишком ослабленный иммунитет."
+        "text": "СПИД - синдром, когда у зараженного ВИЧ слишком ослабленный иммунитет."
       },
       "nextStep": "32"
     },
     {
       "id": "32",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -431,7 +409,7 @@
     {
       "id": "33",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -443,7 +421,7 @@
     {
       "id": "34",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -476,19 +454,19 @@
     {
       "id": "35",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Инфицированные ВИЧ могут жить долго и счастливо так же, как и здоровые."
+        "text": "Зараженные ВИЧ могут жить долго и счастливо так же, как и здоровые."
       },
       "nextStep": "36"
     },
     {
       "id": "36",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -500,7 +478,7 @@
     {
       "id": "37",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -512,12 +490,12 @@
     {
       "id": "38",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "radio",
-        "text": "Как вы думаете, когда можно определить инфицирован человек ВИЧ или нет?",
+        "text": "Как вы думаете, когда можно определить заражен человек ВИЧ или нет?",
         "options": [
           {
             "label": "Сразу после заражения",
@@ -545,7 +523,7 @@
     {
       "id": "39",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -557,7 +535,7 @@
     {
       "id": "40",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -569,7 +547,7 @@
     {
       "id": "41",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -581,7 +559,7 @@
     {
       "id": "42",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -593,7 +571,7 @@
     {
       "id": "43",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -605,7 +583,7 @@
     {
       "id": "44",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -640,7 +618,7 @@
     {
       "id": "45",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -652,7 +630,7 @@
     {
       "id": "46",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -664,7 +642,7 @@
     {
       "id": "47",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -676,19 +654,19 @@
     {
       "id": "48",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Наркоманы могут взять чужой шприц или переспать с человеком без презерватива, поэтому многие из них инфицированы ВИЧ."
+        "text": "Наркоманы могут взять чужой шприц или переспать с человеком без презерватива, поэтому многие из них заражены ВИЧ."
       },
       "nextStep": "49"
     },
     {
       "id": "49",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -700,7 +678,7 @@
     {
       "id": "50",
       "char": "moderator",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -712,7 +690,7 @@
     {
       "id": "51",
       "char": "moderator",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "square.png",
       "position": "right",
       "activity": {
@@ -741,25 +719,14 @@
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "И не бойтесь сдавать тест! Лучше перестраховаться. Всем спасибо, вы прекрасная публика!"
-      },
-      "nextStep": "54.1"
-    },
-    {
-      "id": "54.1",
-      "char": "nobody",
-      "background": "tentOut.png",
-      "position": "center",
-      "activity": {
-        "type": "dialog",
-        "text": "Медицинская палатка, где сдают экспресс-тест на ВИЧ"
+        "text": "И не бойтесь сдавать тест! Лучше перестраховаться! Всем спасибо, вы прекрасная публика!"
       },
       "nextStep": "54"
     },
     {
       "id": "54",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "tentOut.png",
       "position": "right",
       "activity": {
@@ -771,7 +738,7 @@
     {
       "id": "55",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "tentOut.png",
       "position": "left",
       "activity": {
@@ -783,7 +750,7 @@
     {
       "id": "56",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "tentOut.png",
       "position": "left",
       "activity": {
@@ -795,7 +762,7 @@
     {
       "id": "57",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "tentOut.png",
       "position": "right",
       "activity": {
@@ -807,7 +774,7 @@
     {
       "id": "58",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "tentInDoctor.png",
       "position": "left",
       "activity": {
@@ -819,7 +786,7 @@
     {
       "id": "59",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -831,7 +798,7 @@
     {
       "id": "60",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -843,7 +810,7 @@
     {
       "id": "61",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "tentIn.png",
       "position": "left",
       "activity": {
@@ -855,7 +822,7 @@
     {
       "id": "62",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -867,7 +834,7 @@
     {
       "id": "63",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "tentIn.png",
       "position": "left",
       "activity": {
@@ -879,7 +846,7 @@
     {
       "id": "64",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -891,7 +858,7 @@
     {
       "id": "65",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -919,7 +886,7 @@
     {
       "id": "66",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -931,7 +898,7 @@
     {
       "id": "67",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -943,7 +910,7 @@
     {
       "id": "68",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -955,7 +922,7 @@
     {
       "id": "69",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -967,7 +934,7 @@
     {
       "id": "70",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -979,19 +946,19 @@
     {
       "id": "71",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ну вроде как нет... А куда мне можно обратиться, если увижу две полоски?"
+        "text": "Ну вроде как нет… А куда мне можно обратиться, если увижу две полоски?"
       },
       "nextStep": "72"
     },
     {
       "id": "72",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -1003,7 +970,7 @@
     {
       "id": "73",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "tentIn.png",
       "position": "left",
       "activity": {
@@ -1015,7 +982,7 @@
     {
       "id": "74",
       "char": "doctor",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "tentIn.png",
       "position": "right",
       "activity": {
@@ -1027,42 +994,31 @@
     {
       "id": "75",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "tentOut.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Красковская, ты опять меня подписала на что-то."
+        "text": "Ну, Красковская, ты опять меня подписала на что-то."
       },
       "nextStep": "76"
     },
     {
       "id": "76",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "tentOut.png",
       "position": "left",
       "activity": {
         "type": "dialog",
         "text": "Зато точно будешь знать, что ничем не болен."
       },
-      "nextStep": "77.1"
-    },
-    {
-      "id": "77.1",
-      "char": "nobody",
-      "background": "yard.png",
-      "position": "center",
-      "activity": {
-        "type": "dialog",
-        "text": "Двор рядом с домом Александры Красковской"
-      },
       "nextStep": "77"
     },
     {
       "id": "77",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1074,7 +1030,7 @@
     {
       "id": "79",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1086,7 +1042,7 @@
     {
       "id": "80",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1098,7 +1054,7 @@
     {
       "id": "81",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1110,7 +1066,7 @@
     {
       "id": "82",
       "char": "bortsov",
-      "emotion": "angry",
+      "emotion":"angry",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1122,7 +1078,7 @@
     {
       "id": "83",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1134,7 +1090,7 @@
     {
       "id": "84",
       "char": "bortsov",
-      "emotion": "angry",
+      "emotion":"angry",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1146,19 +1102,19 @@
     {
       "id": "85",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Так... Спокойно. Давай присядем."
+        "text": "Так… Спокойно. Давай присядем."
       },
       "nextStep": "86"
     },
     {
       "id": "86",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1170,7 +1126,7 @@
     {
       "id": "87",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1182,19 +1138,19 @@
     {
       "id": "88",
       "char": "bortsov",
-      "emotion": "angry",
+      "emotion":"angry",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "А черт его знает..."
+        "text": "А черт его знает…"
       },
       "nextStep": "89"
     },
     {
       "id": "89",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1206,7 +1162,7 @@
     {
       "id": "90",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1218,7 +1174,7 @@
     {
       "id": "91",
       "char": "bortsov",
-      "emotion": "angry",
+      "emotion":"angry",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1230,7 +1186,7 @@
     {
       "id": "92",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1242,7 +1198,7 @@
     {
       "id": "93",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1254,7 +1210,7 @@
     {
       "id": "94",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1266,7 +1222,7 @@
     {
       "id": "95",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1278,19 +1234,19 @@
     {
       "id": "96",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Просто инфицированному нужно принимать лекарства."
+        "text": "Просто зараженному нужно принимать лекарства."
       },
       "nextStep": "97"
     },
     {
       "id": "97",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1302,7 +1258,7 @@
     {
       "id": "98",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1314,7 +1270,7 @@
     {
       "id": "99",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1326,7 +1282,7 @@
     {
       "id": "100.1",
       "char": "bortsov",
-      "emotion": "fear",
+      "emotion":"fear",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1349,19 +1305,19 @@
     {
       "id": "100.21",
       "char": "kraskovskaya",
-      "emotion": "surprised",
+      "emotion":"surprised",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Ой, может и правда..."
+        "text": "Ой, может и правда…"
       },
       "nextStep": "100.22"
     },
     {
       "id": "100.22",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1373,7 +1329,7 @@
     {
       "id": "100.23",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1385,7 +1341,7 @@
     {
       "id": "100.24",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1397,7 +1353,7 @@
     {
       "id": "100.111",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1409,12 +1365,12 @@
     {
       "id": "100.2",
       "char": "bortsov",
-      "emotion": "fear",
+      "emotion":"fear",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "radio",
-        "text": "Может меня кто-нибудь укусил и я заразился?",
+        "text": "Может меня кто-нибудь укусил? Какое-нибудь животное?",
         "options": [
           {
             "label": "Да",
@@ -1432,21 +1388,21 @@
     {
       "id": "100.31",
       "char": "kraskovskaya",
-      "emotion": "surprised",
+      "emotion":"surprised",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Наверное..."
+        "text": "Наверное…"
       },
       "nextStep": "100.311"
     },
     {
       "id": "100.311",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
-      "position": "right",
+      "position":"right",
       "activity": {
         "type": "dialog",
         "text": "Странная теория, но на правду не похоже."
@@ -1456,7 +1412,7 @@
     {
       "id": "100.32",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1468,12 +1424,12 @@
     {
       "id": "100.41",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "radio",
-        "text": "Может я трогал чьи-то чужие вещи и случайно подцепил ВИЧ?",
+        "text": "Может я трогал чьи-то чужие вещи и случайно подцепил?",
         "options": [
           {
             "label": "Да",
@@ -1491,36 +1447,36 @@
     {
       "id": "100.411",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
-      "position": "right",
+      "position":"right",
       "activity": {
         "type": "dialog",
-        "text": "Хотя нет, странная теория. В таком случае все были бы уже давно инфицированы."
+        "text": "Хотя нет, странная теория. В таком случае все были бы уже давно заражены."
       },
       "nextStep": "100.42"
     },
     {
       "id": "100.412",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Очевидно, что трогал. Но в таком случае все были бы уже давно инфицированы."
+        "text": "Очевидно, что трогал. Но в таком случае все были бы уже давно заражены."
       },
       "nextStep": "100.42"
     },
     {
       "id": "100.42",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "radio",
-        "text": "Может я в бассейне подцепил ВИЧ?",
+        "text": "Может я в бассейне подцепил?",
         "options": [
           {
             "label": "Да",
@@ -1538,9 +1494,9 @@
     {
       "id": "100.421",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
-      "position": "right",
+      "position":"right",
       "activity": {
         "type": "dialog",
         "text": "Хотя тоже какой-то бред. Нет, ВИЧ так не передается."
@@ -1549,25 +1505,25 @@
     },
     {
       "id": "100.422",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "char": "kraskovskaya",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Так ВИЧ не передается воздушно-капельным путем."
+        "text": "Так не передается же воздушно-капельным путем ВИЧ."
       },
       "nextStep": "100.43"
     },
     {
       "id": "100.43",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "radio",
-        "text": "А еще я решил однажды себе на память тату набить. Ну знаешь, в 18 лет уже можно. Может тогда заразился?",
+        "text": "А еще я решил однажды себе на память тату набить. Ну знаешь, в 18 лет уже можно. Может тогда?" ,
         "options": [
           {
             "label": "Да",
@@ -1585,21 +1541,21 @@
     {
       "id": "100.431",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
         "text": "Инструменты стерильные были?"
       },
-      "nextStep": "100.4311"
+      "nextStep": "100.4311" 
     },
     {
       "id": "100.4311",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
-      "position": "right",
+      "position":"right",
       "activity": {
         "type": "dialog",
         "text": "Вроде бы да. Заведение не из дешевых."
@@ -1609,31 +1565,31 @@
     {
       "id": "100.4321",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
         "text": "А передается разве?"
       },
-      "nextStep": "100.4322"
+      "nextStep": "100.4322" 
     },
     {
       "id": "100.4322",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
-      "position": "right",
+      "position":"right",
       "activity": {
         "type": "dialog",
-        "text": "Конечно, это же игла. Все, что вводится в организм, может передавать ВИЧ."
+        "text": "Конечно, это же игла. Все что-то вводится в организм может передавать ВИЧ."
       },
       "nextStep": "101.6"
     },
     {
       "id": "101.6",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1656,7 +1612,7 @@
     {
       "id": "117",
       "char": "kraskovskaya",
-      "emotion": "surprised",
+      "emotion":"surprised",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1668,7 +1624,7 @@
     {
       "id": "118",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1680,7 +1636,7 @@
     {
       "id": "119",
       "char": "kraskovskaya",
-      "emotion": "surprised",
+      "emotion":"surprised",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1692,19 +1648,19 @@
     {
       "id": "120",
       "char": "bortsov",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Ну, блин. После Ленки была одна. Лишь разок..."
+        "text": "Ну, блин… После Ленки была одна. Лишь разок..."
       },
       "nextStep": "121"
     },
     {
       "id": "121",
       "char": "kraskovskaya",
-      "emotion": "surprised",
+      "emotion":"surprised",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1716,19 +1672,19 @@
     {
       "id": "122",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "А ты думаешь, почему она от меня так шарахается? И злится, что ты меня к организации подключила."
+        "text": "А ты думаешь, почему она меня так шарахается? И злится, что ты меня к организации подключила."
       },
       "nextStep": "123"
     },
     {
       "id": "123",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1740,19 +1696,19 @@
     {
       "id": "124",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Ну да... Пользовался... Но эта девушка сказала, что на гормональных сидит."
+        "text": "Ну да… Пользовался… Но эта девушка сказала, что на гормональных сидит."
       },
       "nextStep": "125"
     },
     {
       "id": "125",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1764,7 +1720,7 @@
     {
       "id": "126",
       "char": "kraskovskaya",
-      "emotion": "dissatisfied",
+      "emotion":"dissatisfied",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1776,19 +1732,19 @@
     {
       "id": "127",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Понял я уже... Испортил всю свою дальнейшую жизнь."
+        "text": "Понял я уже… Испортил всю свою дальнейшую жизнь."
       },
       "nextStep": "128"
     },
     {
       "id": "128",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1800,19 +1756,19 @@
     {
       "id": "129",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
         "type": "dialog",
-        "text": "Не, это было на сборах весенних. Честно, я бы с удовольствием забыл про тот случай, но видимо нет."
+        "text": "Не, это было на сборах весенних. Честно, я бы с удовольствием забыл про тот случай, но видимо нет…"
       },
       "nextStep": "130"
     },
     {
       "id": "130",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1824,7 +1780,7 @@
     {
       "id": "131",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
@@ -1836,7 +1792,7 @@
     {
       "id": "132",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "yard.png",
       "position": "right",
       "activity": {
@@ -1848,30 +1804,20 @@
     {
       "id": "133",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "yard.png",
       "position": "left",
       "activity": {
         "type": "dialog",
         "text": "Будь на связи."
       },
-      "nextStep": "134.1"
-    },
-    {
-      "id": "134.1",
-      "char": "nobody",
-      "background": "girlRoom.png",
-      "position": "center",
-      "activity": {
-        "type": "dialog",
-        "text": "Комната Александры Красковской. Ночь перед последним звонком"
-      },
       "nextStep": "134"
     },
+
     {
       "id": "134",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "girlRoom.png",
       "position": "left",
       "activity": {
@@ -1883,7 +1829,7 @@
     {
       "id": "135",
       "char": "kraskovskaya",
-      "emotion": "skeptical",
+      "emotion":"skeptical",
       "background": "girlRoom.png",
       "position": "left",
       "activity": {
@@ -1895,7 +1841,7 @@
     {
       "id": "136",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "girlRoom.png",
       "position": "left",
       "activity": {
@@ -1907,7 +1853,7 @@
     {
       "id": "137",
       "char": "kraskovskaya",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "girlRoom.png",
       "position": "left",
       "activity": {
@@ -1919,7 +1865,7 @@
     {
       "id": "138.1",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "girlRoom.png",
       "position": "left",
       "activity": {
@@ -1931,7 +1877,7 @@
     {
       "id": "138.2",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "girlRoom.png",
       "position": "left",
       "activity": {
@@ -1943,29 +1889,18 @@
     {
       "id": "139",
       "char": "nobody",
-      "emotion": null,
+      "emotion":null,
       "background": "letterNohands.png",
       "position": "letter",
       "activity": {
         "type": "letter"
-      },
-      "nextStep": "140.1"
-    },
-    {
-      "id": "140.1",
-      "char": "nobody",
-      "background": "lastCall.png",
-      "position": "center",
-      "activity": {
-        "type": "dialog",
-        "text": "Последний звонок"
       },
       "nextStep": "140"
     },
     {
       "id": "140",
       "char": "kraskovskaya",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -1977,7 +1912,7 @@
     {
       "id": "141",
       "char": "bortsov",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -1989,7 +1924,7 @@
     {
       "id": "142",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2001,7 +1936,7 @@
     {
       "id": "143",
       "char": "bortsov",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -2013,7 +1948,7 @@
     {
       "id": "144",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2025,7 +1960,7 @@
     {
       "id": "145",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -2037,7 +1972,7 @@
     {
       "id": "146",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2049,7 +1984,7 @@
     {
       "id": "147",
       "char": "bortsov",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -2061,7 +1996,7 @@
     {
       "id": "148",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2073,7 +2008,7 @@
     {
       "id": "149",
       "char": "bortsov",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -2085,7 +2020,7 @@
     {
       "id": "150",
       "char": "kraskovskaya",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2097,7 +2032,7 @@
     {
       "id": "151",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2109,19 +2044,19 @@
     {
       "id": "152",
       "char": "kraskovskaya",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
         "type": "dialog",
-        "text": "Не письмо к Онегину, конечно. Но хотя бы что-то на память. Открой, когда будет тяжко."
+        "text": "Не письмо к Онегину, конечно. Но... Хотя бы что-то на память. Открой, когда будет тяжко."
       },
       "nextStep": "153"
     },
     {
       "id": "153",
       "char": "bortsov",
-      "emotion": "happy",
+      "emotion":"happy",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -2133,7 +2068,7 @@
     {
       "id": "154",
       "char": "kraskovskaya",
-      "emotion": "sad",
+      "emotion":"sad",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2145,7 +2080,7 @@
     {
       "id": "155",
       "char": "bortsov",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "lastCall.png",
       "position": "right",
       "activity": {
@@ -2157,7 +2092,7 @@
     {
       "id": "156",
       "char": "kraskovskaya",
-      "emotion": "neutral",
+      "emotion":"neutral",
       "background": "lastCall.png",
       "position": "left",
       "activity": {
@@ -2168,8 +2103,8 @@
     },
     {
       "id": "157",
-      "char": "epilog",
-      "emotion": null,
+      "char": "nobody",
+      "emotion":null,
       "background": "lastCall.png",
       "position": "center",
       "activity": {
