@@ -1890,8 +1890,8 @@
       "id": "95",
       "char": "bortsov",
       "emotion": "fear",
-      "background": "tentIn.png",
-      "position": "right",
+      "background": "canteen.png",
+      "position": "left",
       "activity": {
         "type": "radio",
         "text": "\"Нужно маме обо всем рассказать.\"",
