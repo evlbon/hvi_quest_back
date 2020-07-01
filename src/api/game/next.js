@@ -103,7 +103,16 @@ router.post('/api/game/next/', utils.authenticateToken, async (req, res) => {
                     step: passage.currentStep,
                     answer
                 });
+                let points = 0;
 
+                if(answer.length >= 500)
+                    points = 30;
+                else if(answer.length >= 100)
+                    points = 20;
+                else if(answer.length >= 50)
+                    points = 10;
+
+                passage.score += points;
                 passage.currentStep = step.nextStep;
                 break;
             }
