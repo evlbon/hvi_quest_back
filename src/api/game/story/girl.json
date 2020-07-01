@@ -1577,7 +1577,7 @@
           {
             "label": "Нет",
             "weight": -5,
-            "nextStep": "100.4321"
+            "nextStep": "100.432"
           }
         ]
       }
@@ -1607,7 +1607,7 @@
       "nextStep": "101.6"
     },
     {
-      "id": "100.4321",
+      "id": "100.432",
       "char": "kraskovskaya",
       "emotion": "neutral",
       "background": "yard.png",
