@@ -32,7 +32,7 @@ module.exports.getStatus = async (passage) => {
     let step = {};
     const story = passage.currentChar ? require(`./story/${passage.currentChar}`) : null;
 
-    if(passage.currentStep === "finish"){
+    if(passage.currentStep === "finish" && !passage.finishTime){
         passage.finishTime = new Date();
         await passage.save()
     }
